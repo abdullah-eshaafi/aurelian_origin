@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+@font-face {
+  font-family: "Ghost Clan";
+  src: url("../Fonts/ghostclan/GhostClan.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../Fonts/myriad-pro-cufonfonts/MyriadPro-Regular.ttf")
+    format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* colors in website */
+.color_white {
+  color: #ffffff;
+}
+
+.color_golden {
+  color: #ffc000;
+}
+.Color_1D1D1B {
+  color: #1d1d1b;
+}
+.bg_color_black {
+  background-color: #000000;
+}
+/* Fonts Myriad Pro */
+
+.Myriad_normal_18_ {
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px !important;
+  line-height: 26px;
+}
+
+.Myriad_normal_20_,
+.Myriad_normal_20_ > h4 {
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: normal !important;
+  font-size: 20px !important;
+  line-height: 30px !important;
+}
+
+h6 {
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  line-height: 25px !important;
+  /* identical to box height, or 104% */
+
+  letter-spacing: 0.346154px;
+
+  color: #ffffff;
+}
+
+/* Fonts Ghost Pro */
+
+.Ghost_normal_normal {
+  font-family: Ghost Clan;
+  font-style: normal;
+  font-weight: normal !important;
+  font-size: 54px !important;
+  line-height: 47px;
+}
+
+.Ghost_normal_80 > h2 {
+  font-family: Ghost Clan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  /* identical to box height, or 112% */
+
+  letter-spacing: 0.888889px;
+
+  /* S Orange */
+
+  color: #ffc000;
+}
+
+.footer_heading > h4 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  color: #ffffff;
+}
+
+.footer_description > h5 {
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+
+  /* Color / Gray 4 */
+
+  color: #f8f8f8;
+
+  opacity: 0.85;
+}
+.Ghost_normal_100px > h3 {
+  font-family: Ghost Clan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 87px;
+  color: #000000;
+  margin: 0px !important;
+}
+/* Margins in Website */
+
+.margin_right_28 {
+  margin-right: 28px;
+}
+.margin_right_56 {
+  margin-right: 56px;
+}
+
+.margin_left_56 {
+  margin-left: 56px;
+}
+
+#apply_now_btn {
+  background: #ffc000;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  padding: 18px 52px 17px 52px;
+
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  transform: skew(-21deg, -1deg);
+  -webkit-box-shadow: 10px 10px #000000;
+  box-shadow: 10px 10px #000000;
+  /* margin-top: 40px;
+  box-shadow: 12px 13px 1px 4px rgba(0, 0, 0, 0.98);  */
+}
+#apply_second_btn {
+  transform: skew(21deg, 1deg);
+
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  background: #ffc000;
+  border: none;
+  outline: none;
+}
+.footer_map {
+  margin-top: 88px;
+}
+/* Resposive margin in website */
+
+@media only screen and (max-width: 768px) {
+  .margin_right_56 {
+    margin-right: 16px;
+  }
+
+  .margin_left_56 {
+    margin-left: 16px;
+  }
+}
