@@ -65,7 +65,7 @@ function TheSlider() {
       setCurrentSlide((prev) => {
         return prev + 1 === slides.length ? 0 : prev + 1;
       });
-    }, 40000);
+    }, 4000);
     return () => {
       clearInterval(intervalId);
     };
