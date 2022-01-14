@@ -16,7 +16,7 @@ function HomePage() {
           <Container className="px-0">
             <Row className="px-0 mx-0">
               <Col
-                lg={6}
+                lg={5}
                 className="Ghost_normal_normal color_golden px-0 mx-0 bg_color_black padding_top_bottom "
               >
                 <div className="d-flex justify-content-center">
@@ -55,7 +55,7 @@ function HomePage() {
           <Container className="px-0">
             <Row className="px-0 mx-0">
               <Col
-                lg={6}
+                lg={5}
                 className="Ghost_normal_normal color_golden px-0 mx-0 padding_top_bottom_second"
               >
                 <div className="d-flex justify-content-center">
@@ -89,8 +89,8 @@ function HomePage() {
           <Container>
             <Row>
               <Col lg={12}>
-                <div className="col-12 d-flex align-items-center counting_numbers_container">
-                  <div className="col-4">
+                <div className="col-12 d-flex counting_numbers_container flex-lg-row flex-column align-items-center">
+                  <div className="col-4 d-flex justify-content-center">
                     <div className="col-12 text-center">
                       <div className="Ghost_normal_80">
                         <h2>50K</h2>

@@ -20,9 +20,9 @@ function Footer() {
     <div className="footer_main_wrapper">
       <Container fluid>
         <Row>
-          <Col className="d-flex px-0">
-            <div className="col-4 px-0 d-flex justify-content-end">
-              <div className="col-8">
+          <Col className="d-xl-flex d-block px-0">
+            <div className="col-xl-4 col-lg-12 px-0 d-flex justify-content-xl-end justify-content-center">
+              <div className="col-xl-8 col-8">
                 <div className="footer_heading">
                   <h4>Aurelian Origins</h4>
                 </div>
@@ -57,8 +57,8 @@ function Footer() {
                 </div>
               </div>
             </div>
-            <div className="col-4 d-flex justify-content-center">
-              <div className="col-5">
+            <div className="col-xl-4 d-xl-flex justify-content-xl-center d-block">
+              <div className="col-xl-5 col-8 d-block mx-auto">
                 <div className="footer_second_col_list">
                   <h5>Pages</h5>
                 </div>
@@ -73,7 +73,7 @@ function Footer() {
                   </ul>
                 </div>
               </div>
-              <div className="col-5">
+              <div className="col-5 col-8 d-block mx-auto">
                 <div className="footer_second_col_list">
                   <h5>Contact Us</h5>
                 </div>
@@ -120,9 +120,9 @@ function Footer() {
                 </div>
               </div>
             </div>
-            <div className="col-4 d-flex justify-content-start">
-              <div className="footer_img  d-flex justify-content-center col-11">
-                <img src={footer_map} alt="..." />
+            <div className="col-xl-4 col-12 d-flex justify-content-xl-start justify-content-center">
+              <div className="footer_img  d-flex justify-content-center col-xl-11 ">
+                <img src={footer_map} alt="..." className="img-fluid" />
               </div>
             </div>
           </Col>
