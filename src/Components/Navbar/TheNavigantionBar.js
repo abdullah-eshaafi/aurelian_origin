@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 
 //Css file of component
@@ -9,7 +9,13 @@ import "./TheNavigationBar.css";
 import aurelian_logo from "../../Resources/Images/Navbar/aurelian_logo.svg";
 import aurelian from "../../Resources/Images/Navbar/aurelian.svg";
 import search from "../../Resources/Images/Navbar/search.svg";
-function TheNavigantionBar() {
+
+import { NavLink, useLocation } from "react-router-dom";
+function TheNavigantionBar(props) {
+  const location = useLocation();
+
+  console.log(location);
+
   let Myriad_normal_18_ = "Myriad_normal_18_";
   let color_white = "color_white";
   return (
@@ -28,45 +34,46 @@ function TheNavigantionBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav>
-            <Nav.Link
+            <NavLink
               to="/"
               className={`margin_right_28 navbar_link ${Myriad_normal_18_} ${color_white}`}
+              activeClassName="active"
             >
               Home
-            </Nav.Link>
-            <Nav.Link
+            </NavLink>
+            <NavLink
               to="/about"
               className={`margin_right_28 navbar_link ${Myriad_normal_18_} ${color_white}`}
             >
               About Us
-            </Nav.Link>
-            <Nav.Link
-              href="#deets"
-              className={`margin_right_28 ${Myriad_normal_18_} ${color_white}`}
+            </NavLink>
+            <NavLink
+              to="freedom"
+              className={`margin_right_28 navbar_link ${Myriad_normal_18_} ${color_white}`}
             >
               Freedom Cry
-            </Nav.Link>
-            <Nav.Link
-              href="#deets"
-              className={`margin_right_28 ${Myriad_normal_18_} ${color_white}`}
+            </NavLink>
+            <NavLink
+              to="career"
+              className={`margin_right_28 navbar_link ${Myriad_normal_18_} ${color_white}`}
             >
               Careers
-            </Nav.Link>
-            <Nav.Link
-              href="#deets"
-              className={`margin_right_28 ${Myriad_normal_18_} ${color_white}`}
+            </NavLink>
+            <NavLink
+              to="/blog"
+              className={`margin_right_28  navbar_link ${Myriad_normal_18_} ${color_white}`}
             >
               Blog
-            </Nav.Link>
-            <Nav.Link
-              href="#deets"
-              className={`margin_right_28 ${Myriad_normal_18_} ${color_white}`}
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className={`margin_right_28  navbar_link ${Myriad_normal_18_} ${color_white}`}
             >
               Contact Us
-            </Nav.Link>
-            <Nav.Link className="margin_right_44">
+            </NavLink>
+            <NavLink to="/.." className="margin_right_44">
               <img src={search} alt="..." />
-            </Nav.Link>
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>
