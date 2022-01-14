@@ -1,3 +1,27 @@
 .nav-link {
   color: #ffffff !important;
 }
+
+.navbar_link {
+  position: relative;
+}
+.navbar_link:hover {
+  color: #ffc000 !important;
+}
+
+.navbar_link:focus {
+  color: #ffc000 !important;
+}
+.navbar_link:focus {
+  color: #ffc000 !important;
+}
+
+.navbar_link:hover:before {
+  content: "";
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+  width: 16px; /* or 100px */
+  border: 2px solid #ffc000;
+  border-radius: 10px;
+}

@@ -29,14 +29,14 @@ function TheNavigantionBar() {
           <Nav className="me-auto"></Nav>
           <Nav>
             <Nav.Link
-              href="#memes"
-              className={`margin_right_28 ${Myriad_normal_18_} ${color_white}`}
+              to="/"
+              className={`margin_right_28 navbar_link ${Myriad_normal_18_} ${color_white}`}
             >
               Home
             </Nav.Link>
             <Nav.Link
-              href="#deets"
-              className={`margin_right_28 ${Myriad_normal_18_} ${color_white}`}
+              to="/about"
+              className={`margin_right_28 navbar_link ${Myriad_normal_18_} ${color_white}`}
             >
               About Us
             </Nav.Link>
