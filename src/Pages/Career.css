@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant&family=Poppins&display=swap");
+
+.careers_main_wrapper {
+  background: #eeeeee;
+}
+.career_msg_team {
+  margin-top: 163px;
+  margin-bottom: 40px;
+}
+.career_msg_team > h3 {
+  font-family: Ghost Clan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 0px !important;
+}
+.career_items {
+  background: #ffffff;
+  border-radius: 4px;
+  padding-bottom: 40px;
+  margin-bottom: 80px;
+}
+.careers_items_list {
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+.careers_items_list > p {
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  font-feature-settings: "salt" on, "liga" off;
+
+  color: #000000;
+}
+.caraousel_item_commas {
+  margin-right: 20px;
+  margin-top: 8px;
+}
+.caraousel_item_commas > h3 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 98px;
+  /* identical to box height, or 136% */
+
+  font-feature-settings: "salt" on, "liga" off;
+
+  /* S Orange */
+
+  color: #ffc000;
+}
+
+.careers_items_list_heading > h3 {
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  /* or 136% */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+.careers_items_list_text > h4 {
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 30px;
+  /* or 136% */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.careers_items_list_img > img {
+  margin-right: 16px;
+}
