@@ -3,6 +3,23 @@
 .careers_main_wrapper {
   background: #eeeeee;
 }
+
+.career_msg_team_ {
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+.career_msg_team_ > h3 {
+  font-family: Ghost Clan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 0px !important;
+}
+
 .career_msg_team {
   margin-top: 163px;
   margin-bottom: 40px;

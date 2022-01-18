@@ -128,7 +128,7 @@ function Careers() {
           <Row>
             <Col className="d-flex justify-content-center">
               <div className="col-lg-7">
-                <div className="career_msg_team">
+                <div className="career_msg_team_">
                   <h3>Message from HR</h3>
                 </div>
                 <div className="col-lg-12">
