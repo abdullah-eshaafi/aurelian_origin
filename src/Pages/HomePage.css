@@ -95,6 +95,14 @@
   margin-top: -65px;
   background-color: black;
 }
+
+/* .who_img_padding_top > img {
+  width: 100vw;
+  height: 88vh;
+  object-fit: fill;
+  overflow: hidden;
+  position: relative;
+} */
 /* 
 transform: matrix(-1, 0, 0, 1, 0, 0); */
 

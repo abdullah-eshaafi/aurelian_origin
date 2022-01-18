@@ -45,7 +45,7 @@ function HomePage() {
                 </div>
               </Col>
               <Col lg={6} className="who_img_padding_top ">
-                <img src={HomePage_Who_text} alt="..." className="img-fluid" />
+                <img src={HomePage_Who_text} alt="..." />
               </Col>
             </Row>
           </Container>
