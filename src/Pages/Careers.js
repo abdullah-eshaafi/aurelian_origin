@@ -29,6 +29,8 @@ import paid from "../Resources/Images/career/paid.svg";
 
 import { CareerData } from "../Components/Careers/CareerData.js";
 
+import Footer from "../Components/Footer/Footer";
+
 function Careers() {
   const responsive = {
     superLargeDesktop: {
@@ -386,10 +388,35 @@ function Careers() {
                   <input type="text" placeholder="Email"></input>
                 </div>
               </div>
+              <div className="col-lg-12 d-flex justify-content-center ">
+                <div className="col-lg-11 career_jojn_form_ d-flex justify-content-center careers_upload_file">
+                  <div className="d-flex justify-content-center align-items-center content_main_last_div">
+                    {" "}
+                    <input type="file"></input>
+                    <div>
+                      {" "}
+                      <h1 className="d-flex">
+                        <h3>Upload</h3> your resume here
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-12 d-flex justify-content-center career_last_inpurt___">
+                <div className="col-lg-11 career_jojn_form__ d-flex justify-content-center">
+                  <input type="text" placeholder="Email"></input>
+                </div>
+              </div>
+              <div className="col-lg-12 d-flex justify-content-center career_last_inpurt___">
+                <div className="col-lg-11 career_jojn_form__ d-flex justify-content-center">
+                  <button>SUBMIT</button>
+                </div>
+              </div>
             </Col>
           </Row>
         </Container>
       </div>
+      <Footer></Footer>
     </Container>
   );
 }

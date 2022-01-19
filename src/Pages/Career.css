@@ -272,6 +272,37 @@
   color: #8e8e8e;
   padding-left: 10px;
 }
+.career_jojn_form__ > input::placeholder {
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+
+  color: #8e8e8e;
+  padding-left: 10px;
+}
+
+.career_jojn_form_ > input::placeholder {
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+
+  color: #8e8e8e;
+  padding-left: 10px;
+}
 
 .career_jojn_form > input {
   width: 100%;
@@ -282,9 +313,31 @@
   height: 48px;
 }
 
+.career_jojn_form__ > input {
+  width: 92%;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  border-radius: 2px;
+  height: 48px;
+}
+
+.career_jojn_form_ > div {
+  width: 92%;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  border-radius: 2px;
+  height: 104px;
+}
+
 .career_jojn_form {
   margin-right: 8px;
   margin-left: 8px;
+  margin-bottom: 32px;
+}
+
+.career_jojn_form_ {
   margin-bottom: 32px;
 }
 
@@ -334,4 +387,88 @@
 
   transition: 0.25s all ease;
   pointer-events: none;
+}
+
+.careers_upload_file > div > input {
+  position: relative;
+  color: transparent;
+  opacity: 0;
+  width: 100%;
+  z-index: 22;
+}
+
+.careers_upload_file > div > div {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  z-index: 1;
+}
+
+.careers_upload_file > div > div > h1 > h3 {
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.5px;
+
+  /* S Orange */
+
+  color: #ffc000;
+  margin-right: 8px;
+}
+
+.careers_upload_file > div > div > h1 {
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.5px;
+
+  /* S Orange */
+
+  color: #8e8e8e;
+}
+
+.content_main_last_div {
+  position: relative;
+}
+
+#file-upload-button {
+  color: #000000;
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+}
+
+.career_last_inpurt___ {
+  margin-bottom: 32px;
+}
+.career_jojn_form__ > button {
+  width: 92%;
+  background: #ffc000;
+  border-radius: 4px;
+  border: none;
+  height: 48px;
+
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.career_last_inpurt___ {
+  margin-bottom: 101px;
 }
