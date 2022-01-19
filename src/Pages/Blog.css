@@ -1,0 +1,39 @@
+.blog_main_heading {
+  margin-top: 64px;
+}
+.blog_main_heading > h4 {
+  font-family: Ghost Clan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 69px;
+
+  text-transform: uppercase;
+
+  color: #000000;
+}
+.blog_main_para > p {
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 35px;
+  /* or 159% */
+
+  text-align: justify;
+
+  color: #000000;
+}
+
+.blog_main_img {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.blog_main_img > img {
+  width: 100%;
+}
+
+.blog_com_main_wrapper {
+  margin-bottom: 100px;
+}

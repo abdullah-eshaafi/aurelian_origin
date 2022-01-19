@@ -1,0 +1,153 @@
+.contact-section {
+  margin-bottom: 163px;
+}
+.contact_get_in_touch > h4 {
+  font-family: Ghost Clan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 42px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #000000;
+  margin-bottom: 0px !important;
+}
+.contact_get_in_touch {
+  margin-bottom: 12px;
+}
+
+.contact_get_in_touch_para > h5 {
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 24px;
+  /* identical to box height, or 109% */
+
+  letter-spacing: 0.15px;
+
+  color: #000000;
+  margin-bottom: 0px !important;
+}
+
+.contact_get_in_touch_para {
+  margin-bottom: 40px;
+}
+
+.contact_section_input > input {
+  width: 100%;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.contact_section_input > textarea {
+  width: 100%;
+
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.contact_section_input {
+  margin-top: 32px;
+}
+.contact_section_input > input::placeholder,
+.contact_section_input > textarea::placeholder {
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.5px;
+
+  color: #8e8e8e;
+  padding-left: 12px;
+  padding-top: 12px;
+}
+
+.contact_section_input > button {
+  width: 100%;
+  /* height: 48px; */
+  background: #ffc000;
+  border-radius: 4px;
+  border: none;
+
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+
+  color: #000000;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.contact_input_form {
+  margin-bottom: 101px;
+}
+
+.conatct_details_heading {
+  margin-bottom: 12px;
+}
+
+.conatct_details_heading > h4 {
+  font-family: Ghost Clan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 42px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #000000;
+  margin-bottom: 0px !important;
+}
+.conatct_details_heading_para {
+  margin-bottom: 40px;
+}
+.conatct_details_heading_para > h3 {
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 24px;
+  /* identical to box height, or 109% */
+
+  letter-spacing: 0.15px;
+
+  color: #000000;
+  margin-bottom: 0px !important;
+}
+.contact_us_icon {
+  margin-bottom: 14px;
+}
+.contact_us_icon > img {
+  margin-right: 16px;
+}
+
+.contact_us_icon > h3 {
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 120% */
+
+  letter-spacing: 0.5px;
+
+  color: #000000;
+}

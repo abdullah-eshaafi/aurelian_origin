@@ -48,10 +48,10 @@ function TheNavigantionBar(props) {
               About Us
             </NavLink>
             <NavLink
-              to="freedom"
+              to="/call"
               className={`margin_right_28 navbar_link ${Myriad_normal_18_} ${color_white}`}
             >
-              Freedom Cry
+              Call of Liberty
             </NavLink>
             <NavLink
               to="/career"

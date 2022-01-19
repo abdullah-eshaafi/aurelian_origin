@@ -1,0 +1,32 @@
+.call_background_img {
+  background-image: url("../Resources/Images/Blog/call_bg.png");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: calc(100vh - 82px); /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.call_coming_soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+
+.call_coming_soon > h3 {
+  font-family: Ghost Clan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 83px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  background: linear-gradient(180deg, #fedd22 5.56%, #f4913f 89.29%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
