@@ -345,6 +345,49 @@ function Careers() {
               </Col>
             ))}
           </Row>
+          <Row>
+            <Col lg={12} className="text-center">
+              <div className="career_join_form text-center">
+                <h3>Join our team</h3>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <div className="col-lg-12 d-flex justify-content-center">
+                <div className="col-lg-5 career_jojn_form">
+                  <input type="text" placeholder="First Name"></input>
+                </div>
+                <div className="col-lg-5 career_jojn_form">
+                  <input type="text" placeholder="Last Name"></input>
+                </div>
+              </div>
+
+              <div className="col-lg-12 d-flex justify-content-center">
+                <div className="col-lg-5 career_jojn_form">
+                  <input type="text" placeholder="Contact Number"></input>
+                </div>
+                <div className="col-lg-5 career_jojn_form">
+                  <input type="text" placeholder="Email"></input>
+                </div>
+              </div>
+
+              <div className="col-lg-12 d-flex justify-content-center">
+                <div className="col-lg-5 career_jojn_form select">
+                  <select>
+                    <option value="" disabled selected>
+                      Select your option
+                    </option>
+                    <option value="2">No JS</option>
+                    <option value="3">Nice!</option>
+                  </select>
+                </div>
+                <div className="col-lg-5 career_jojn_form">
+                  <input type="text" placeholder="Email"></input>
+                </div>
+              </div>
+            </Col>
+          </Row>
         </Container>
       </div>
     </Container>
