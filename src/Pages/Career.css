@@ -105,3 +105,136 @@
 .careers_items_list_img > img {
   margin-right: 16px;
 }
+
+.career_culture_wrapper {
+  padding-top: 80px;
+}
+
+.career_our_culture_heading > h6 {
+  font-family: Ghost Clan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 42px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #000000;
+  margin-bottom: 0 !important;
+}
+
+.career_our_culture_text > p {
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 35px;
+  color: #000000;
+}
+
+.career_employee_benefite {
+  margin-top: 84px;
+  margin-bottom: 64px;
+}
+
+.craeer_employee_wellBeing > p {
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+
+  color: #000000;
+  margin-bottom: 0px !important;
+}
+.employee_benefits_wrapper {
+  margin-bottom: 64px;
+}
+
+.employee_career_well_beign_second {
+  margin-bottom: 80px;
+}
+
+.career_open_position_wrapper > h4 {
+  font-family: Ghost Clan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 42px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.Employee_Benifits_Careeer > h4 {
+  font-family: Ghost Clan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 42px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.career_open_position_wrapper {
+  margin-bottom: 64px;
+}
+
+.career_position_head > h4 {
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 35px;
+  /* identical to box height, or 125% */
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.career_position_para > p {
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 35px;
+  /* or 175% */
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.career_position_btn > button {
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+
+  color: #000000;
+
+  background: #ffc000;
+  /* S Orange */
+
+  border: 1px solid #ffc000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 16px 152px 16px 152px;
+}
+
+.job_openings_wrapper {
+  margin-bottom: 64px;
+}
