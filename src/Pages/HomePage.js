@@ -5,6 +5,7 @@ import Slider from "../Components/Slider/TheSlider";
 import "./HomePage.css";
 import HomePage_Who_text from "../Resources/Images/HomePage/HomePage_Who_text.png";
 import Footer from "../Components/Footer/Footer";
+
 function HomePage() {
   return (
     <div>
