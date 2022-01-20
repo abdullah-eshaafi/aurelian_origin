@@ -30,3 +30,34 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  .call_coming_soon {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 576px) and (min-width: 470px) {
+  .call_coming_soon {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 470px) and (min-width: 270px) {
+  .call_coming_soon {
+    text-align: center;
+  }
+
+  .call_coming_soon > h3 {
+    font-family: Ghost Clan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #fedd22 5.56%, #f4913f 89.29%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

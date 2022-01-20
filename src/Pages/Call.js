@@ -11,7 +11,6 @@ function Call() {
       <Row>
         <Col className="px-0">
           <div className="call_background_img">
-            {" "}
             <div className="call_coming_soon">
               <h3>COMING SOON</h3>
             </div>
