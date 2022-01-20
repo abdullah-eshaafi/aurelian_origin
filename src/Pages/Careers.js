@@ -39,11 +39,11 @@ function Careers() {
       items: 1,
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 3000, min: 768 },
       items: 1,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 768, min: 464 },
       items: 1,
     },
     mobile: {
@@ -107,23 +107,23 @@ function Careers() {
         <Container>
           <Row>
             <Col className="d-flex justify-content-center">
-              <div className="col-lg-7">
+              <div className="col-lg-7 col-md-12 col-sm-12 col-12">
                 <div className="career_msg_team">
                   <h3>Message from the team</h3>
                 </div>
-                <div className="col-lg-12">
+                <div className="col-lg-12 col-md-12 col-12">
                   <Carousel responsive={responsive}>
                     {items.map((data, i) => (
-                      <div className="career_items col-lg-12" key={i}>
-                        <div className="col-lg-12 d-flex justify-content-center">
+                      <div className="career_items col-lg-12 col-md-12" key={i}>
+                        <div className="col-lg-12  col-md-12 d-flex justify-content-center">
                           <div className="caraousel_item_commas">
                             <h3>“</h3>
                           </div>
-                          <div className="careers_items_list col-lg-10">
+                          <div className="careers_items_list col-lg-10 col-md-10">
                             <p>{data.text}</p>
                           </div>
                         </div>
-                        <div className="d-flex align-items-center justify-content-center col-lg-7">
+                        <div className="d-flex align-items-center justify-content-center col-lg-7 col-md-7">
                           <div className="careers_items_list_img">
                             <img src={data.img} alt="..." />
                           </div>
@@ -209,21 +209,21 @@ function Careers() {
                     loyalty, learning, and dedication is encouraged. We strive
                     to empower our employees to step out of their comfort zones
                     and embrace new challenges for both personal and
-                    professional growth.{" "}
+                    professional growth.
                   </p>
                 </div>
               </div>
             </Col>
             <Col lg={6}>
-              <div>
+              <div className="career_culture_img">
                 <img src={career_culture_first} alt="...." />
               </div>
             </Col>
           </Row>
 
           <Row className="career_culture_wrapper">
-            <Col lg={6}>
-              <div>
+            <Col lg={6} className="order-last order-lg-first">
+              <div className="career_culture_img">
                 <img src={career_culture_first} alt="...." />
               </div>
             </Col>
@@ -264,9 +264,9 @@ function Careers() {
             </Col>
           </Row>
           <Row className="employee_benefits_wrapper">
-            <Col lg={12} className="d-flex justify-content-center">
-              <div className="col-lg-12 d-flex justify-content-between">
-                <div className="col-lg-4 text-center">
+            <Col lg={12} md={12} className="d-flex justify-content-center">
+              <div className="col-lg-12  d-lg-flex justify-content-between">
+                <div className="col-lg-4  text-center reward_wrapper">
                   <div>
                     <img src={Heart_icon} alt="..."></img>
                   </div>
@@ -274,7 +274,7 @@ function Careers() {
                     <p>Employee Wellbeing</p>
                   </div>
                 </div>
-                <div className="col-lg-4 text-center">
+                <div className="col-lg-4  text-center reward_wrapper">
                   <div>
                     <img src={attandance} alt="..."></img>
                   </div>
@@ -282,7 +282,7 @@ function Careers() {
                     <p>Attendance Rewards</p>
                   </div>
                 </div>
-                <div className="col-lg-4 text-center">
+                <div className="col-lg-4 text-center reward_wrapper">
                   <div>
                     <img src={paid_leave} alt="..."></img>
                   </div>
@@ -295,8 +295,8 @@ function Careers() {
           </Row>
           <Row className="employee_career_well_beign_second">
             <Col lg={12} className="d-flex justify-content-center">
-              <div className="col-lg-12 d-flex justify-content-between">
-                <div className="col-lg-4 text-center">
+              <div className="col-lg-12 d-lg-flex justify-content-between">
+                <div className="col-lg-4 text-center reward_wrapper">
                   <div>
                     <img src={loyality} alt="..."></img>
                   </div>
@@ -304,7 +304,7 @@ function Careers() {
                     <p>Loyalty Rewards</p>
                   </div>
                 </div>
-                <div className="col-lg-4 text-center">
+                <div className="col-lg-4 text-center reward_wrapper">
                   <div>
                     <img src={provident} alt="..."></img>
                   </div>
@@ -312,7 +312,7 @@ function Careers() {
                     <p>Provident Fund</p>
                   </div>
                 </div>
-                <div className="col-lg-4 text-center">
+                <div className="col-lg-4 text-center reward_wrapper">
                   <div>
                     <img src={paid} alt="..."></img>
                   </div>
@@ -356,26 +356,26 @@ function Careers() {
           </Row>
           <Row>
             <Col>
-              <div className="col-lg-12 d-flex justify-content-center">
-                <div className="col-lg-5 career_jojn_form">
+              <div className="col-lg-12 col-12 d-lg-flex justify-content-center">
+                <div className="col-lg-5 col-12 career_jojn_form">
                   <input type="text" placeholder="First Name"></input>
                 </div>
-                <div className="col-lg-5 career_jojn_form">
+                <div className="col-lg-5 col-12 career_jojn_form">
                   <input type="text" placeholder="Last Name"></input>
                 </div>
               </div>
 
-              <div className="col-lg-12 d-flex justify-content-center">
-                <div className="col-lg-5 career_jojn_form">
+              <div className="col-lg-12 col-12 d-lg-flex justify-content-center">
+                <div className="col-lg-5 col-12 career_jojn_form">
                   <input type="text" placeholder="Contact Number"></input>
                 </div>
-                <div className="col-lg-5 career_jojn_form">
+                <div className="col-lg-5 col-12 career_jojn_form">
                   <input type="text" placeholder="Email"></input>
                 </div>
               </div>
 
-              <div className="col-lg-12 d-flex justify-content-center">
-                <div className="col-lg-5 career_jojn_form select">
+              <div className="col-lg-12 col-12 d-lg-flex justify-content-center">
+                <div className="col-lg-5 col-12 career_jojn_form select">
                   <select>
                     <option value="" disabled selected>
                       Select your option
@@ -384,12 +384,12 @@ function Careers() {
                     <option value="3">Nice!</option>
                   </select>
                 </div>
-                <div className="col-lg-5 career_jojn_form">
+                <div className="col-lg-5 col-12 career_jojn_form">
                   <input type="text" placeholder="Email"></input>
                 </div>
               </div>
-              <div className="col-lg-12 d-flex justify-content-center ">
-                <div className="col-lg-11 career_jojn_form_ d-flex justify-content-center careers_upload_file">
+              <div className="col-lg-12 col-12 d-flex justify-content-center px-0">
+                <div className="col-lg-11 col-12 career_jojn_form_ d-flex justify-content-center careers_upload_file">
                   <div className="d-flex justify-content-center align-items-center content_main_last_div">
                     {" "}
                     <input type="file"></input>
@@ -402,13 +402,13 @@ function Careers() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-12 d-flex justify-content-center career_last_inpurt___">
-                <div className="col-lg-11 career_jojn_form__ d-flex justify-content-center">
+              <div className="col-lg-12 col-12 d-flex justify-content-center career_last_inpurt___">
+                <div className="col-lg-11 col-12 career_jojn_form__ d-flex justify-content-center">
                   <input type="text" placeholder="Email"></input>
                 </div>
               </div>
-              <div className="col-lg-12 d-flex justify-content-center career_last_inpurt___">
-                <div className="col-lg-11 career_jojn_form__ d-flex justify-content-center">
+              <div className="col-lg-12 col-12 d-flex justify-content-center career_last_inpurt___">
+                <div className="col-lg-11 col-12 career_jojn_form__ d-flex justify-content-center">
                   <button>SUBMIT</button>
                 </div>
               </div>

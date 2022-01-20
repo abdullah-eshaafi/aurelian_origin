@@ -11,7 +11,7 @@ function Blog() {
   return (
     <Container fluid className="px-0" style={{ overflowX: "hidden" }}>
       <TheNavigantionBar></TheNavigantionBar>
-      <div>
+      <div className="boplg_main_image">
         <img src={blogImg} alt="..."></img>
       </div>
       <Container>

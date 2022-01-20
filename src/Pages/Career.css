@@ -472,3 +472,172 @@
 .career_last_inpurt___ {
   margin-bottom: 101px;
 }
+.career_culture_img > img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .reward_wrapper {
+    margin-bottom: 24px;
+  }
+  .career_jojn_form_ {
+    margin-left: 16px;
+  }
+  .career_jojn_form_ > div {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    border-radius: 2px;
+    height: 104px;
+  }
+
+  .career_jojn_form__ {
+    margin-left: 16px;
+  }
+  .career_jojn_form__ > input {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    border-radius: 2px;
+    height: 48px;
+  }
+
+  .career_jojn_form__ > button {
+    width: 100%;
+  }
+  .careers_upload_file > div > div {
+    position: absolute;
+    top: 40%;
+    left: 36%;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  .reward_wrapper {
+    margin-bottom: 24px;
+  }
+  .career_jojn_form_ {
+    margin-left: 16px;
+  }
+  .career_jojn_form_ > div {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    border-radius: 2px;
+    height: 104px;
+  }
+
+  .career_jojn_form__ {
+    margin-left: 16px;
+  }
+  .career_jojn_form__ > input {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    border-radius: 2px;
+    height: 48px;
+  }
+
+  .career_jojn_form__ > button {
+    width: 100%;
+  }
+
+  .careers_upload_file > div > div {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 576px) and (min-width: 470px) {
+  .reward_wrapper {
+    margin-bottom: 24px;
+  }
+  .career_jojn_form_ {
+    margin-left: 0px;
+  }
+  .career_jojn_form_ > div {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    border-radius: 2px;
+    height: 104px;
+  }
+
+  .career_jojn_form__ {
+    margin-left: 0px;
+  }
+  .career_jojn_form__ > input {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    border-radius: 2px;
+    height: 48px;
+  }
+
+  .career_jojn_form__ > button {
+    width: 100%;
+  }
+
+  .careers_upload_file > div > div {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    z-index: 1;
+  }
+  .career_jojn_form {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 470px) and (min-width: 270px) {
+  .reward_wrapper {
+    margin-bottom: 24px;
+  }
+  .career_jojn_form_ {
+    margin-left: 0px;
+  }
+  .career_jojn_form_ > div {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    border-radius: 2px;
+    height: 104px;
+  }
+
+  .career_jojn_form__ {
+    margin-left: 0px;
+  }
+  .career_jojn_form__ > input {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    border-radius: 2px;
+    height: 48px;
+  }
+
+  .career_jojn_form__ > button {
+    width: 100%;
+  }
+
+  .careers_upload_file > div > div {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    z-index: 1;
+  }
+  .career_jojn_form {
+    margin-left: 0px;
+  }
+}
