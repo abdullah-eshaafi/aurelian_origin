@@ -85,7 +85,7 @@ function Careers() {
         <Container fluid className="about_section_hero_main_wrapper">
           <Container>
             <Row>
-              <Col className="d-flex justify-content-center px-0" lg={6}>
+              <Col className="d-flex" lg={6}>
                 <div className="about_section_hero_section">
                   <h1>Careers</h1>
                 </div>
@@ -233,15 +233,14 @@ function Careers() {
             >
               <div className="col-lg-9">
                 <div className="career_our_culture_heading">
-                  <h6>our culture</h6>
+                  <h6>opportunities</h6>
                 </div>
                 <div className="career_our_culture_text">
                   <p>
-                    We believe in building a culture where employee engagement,
-                    loyalty, learning, and dedication is encouraged. We strive
-                    to empower our employees to step out of their comfort zones
-                    and embrace new challenges for both personal and
-                    professional growth.
+                    Aurelian Origins provides excellent career opportunities to
+                    those who want to explore and express their talent. If you
+                    are passionate to bring innovation in the gaming, you could
+                    be the ONE!
                   </p>
                 </div>
               </div>
@@ -416,7 +415,9 @@ function Careers() {
           </Row>
         </Container>
       </div>
-      <Footer></Footer>
+      <div style={{ marginTop: "83px" }}>
+        <Footer></Footer>
+      </div>
     </Container>
   );
 }

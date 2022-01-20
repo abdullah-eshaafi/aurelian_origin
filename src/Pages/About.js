@@ -32,7 +32,7 @@ function About() {
       <Container fluid className="about_section_hero_main_wrapper">
         <Container>
           <Row>
-            <Col className="d-flex justify-content-center px-0" lg={6}>
+            <Col className="d-flex " lg={6}>
               <div className="about_section_hero_section">
                 <h1>About us</h1>
               </div>
@@ -79,7 +79,7 @@ function About() {
       </div>
       <div>
         <AboutTextImgSec
-          title="Vision"
+          title="VISION"
           text="To create a strong influence  in guiding the gaming industry to the top of entertainment."
           img={about_us_three}
           orderfirst={"order-first"}
@@ -92,7 +92,7 @@ function About() {
       </div>
       <div>
         <AboutTextImgSec
-          title="Mission"
+          title="MISSION"
           text="Our Mission is to create high quality, engaging, entertaining, and unique games for all platforms to provide an outstanding user experience and to enable talent in reaching their full potential through innovative tools and technology to lead and transform the gaming industry in all aspects."
           img={about_us_second}
           orderfirst={"order-lg-last order-first"}
@@ -245,7 +245,7 @@ function About() {
           </Col>{" "}
         </Row>
       </Container>
-      <div>
+      <div className="about_footer">
         <Footer />
       </div>
     </Container>

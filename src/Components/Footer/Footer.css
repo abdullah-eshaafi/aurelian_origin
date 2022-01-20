@@ -196,3 +196,14 @@
   margin-top: 29px;
   margin-right: 25px;
 }
+
+@media only screen and (max-width: 470px) and (min-width: 270px) {
+  .footer_bootom {
+    display: block;
+    text-align: center;
+  }
+
+  .footer_bootom > li {
+    margin-bottom: 16px;
+  }
+}

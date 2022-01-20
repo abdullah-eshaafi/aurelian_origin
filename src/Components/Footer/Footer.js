@@ -78,7 +78,7 @@ function Footer() {
                   <ul className="footer_second_col_li">
                     <li>Home</li>
                     <li>About Us</li>
-                    <li>Freedom Cry</li>
+                    <li>Call of liberty</li>
                     <li>Careers</li>
                     <li>Blog</li>
                     <li>Contact Us</li>
@@ -140,8 +140,8 @@ function Footer() {
           </Col>
         </Row>
         <Row>
-          <Col lg={6} className="d-flex justify-content-center">
-            <div className="col-lg-8">
+          <Col xl={6} md={12} className="d-flexjustify-content-center">
+            <div className="col-lg-8 col-12">
               <ul className="footer_bootom">
                 {values.map((v, idx) => (
                   <li key={idx} onClick={() => handleShow(v)}>
@@ -156,8 +156,8 @@ function Footer() {
               </ul>
             </div>
           </Col>
-          <Col lg={5}>
-            <div className="text-end footer_right_reserved">
+          <Col xl={5} md={12}>
+            <div className="text-xl-end text-center footer_right_reserved">
               <h4>2021 © Aurelian origins | All Rights Reserved</h4>
             </div>
           </Col>

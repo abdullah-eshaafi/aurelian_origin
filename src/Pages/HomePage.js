@@ -8,7 +8,7 @@ import Footer from "../Components/Footer/Footer";
 
 function HomePage() {
   return (
-    <div>
+    <div className="Homepgae_start_website">
       <TheNavigationBar />
       <Slider />
 
@@ -90,7 +90,7 @@ function HomePage() {
           <Container>
             <Row>
               <Col lg={12}>
-                <div className="col-12 d-flex counting_numbers_container flex-lg-row flex-column align-items-center">
+                <div className="col-12 d-flex counting_numbers_container flex-lg-row flex-column align-items-sm-center align-items-start">
                   <div className="col-4 d-flex justify-content-center">
                     <div className="col-12 text-center">
                       <div className="Ghost_normal_80">

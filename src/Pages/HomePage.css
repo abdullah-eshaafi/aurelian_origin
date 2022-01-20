@@ -1,3 +1,6 @@
+.Homepgae_start_website {
+  background: #000000;
+}
 .homePage-container {
   position: relative;
   margin-top: -8.6%;
@@ -12,6 +15,22 @@
   display: flex;
 
   align-items: center;
+
+  font-family: Ghost Clan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 54px;
+  line-height: 47px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  /* S Orange */
+
+  color: #ffc000;
 }
 .HomePage_Who_text > p {
   transform: skewY(3.5deg);
@@ -30,6 +49,7 @@
 .who_img_padding_top > img {
   padding-left: 138px;
   transform: skewY(3.5deg);
+  width: 100%;
 }
 .homePage_bg_pic {
   background-image: url("../Resources/Images//HomePage/HomePage_bg.jpg");
@@ -47,6 +67,21 @@
 .HomePage_Who_text_second > h2 {
   display: flex;
   align-items: center;
+  font-family: Ghost Clan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 54px;
+  line-height: 47px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  /* S Orange */
+
+  color: #ffc000;
 }
 .HomePage_Who_text_second > p {
   display: flex;
@@ -68,7 +103,8 @@
 
 .Join_Us {
   position: relative;
-  height: 600px;
+  padding-top: 228px;
+  padding-bottom: 228px;
   background: #ffc000;
   transform: skewY(-3.5deg);
   padding-top: 162px;

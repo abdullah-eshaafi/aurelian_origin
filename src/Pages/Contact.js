@@ -13,12 +13,6 @@ import location_on from "../Resources/Images/Blog/location_on.svg";
 import mail from "../Resources/Images/Blog/mail.svg";
 import phone from "../Resources/Images/Blog/phone.svg";
 function Contact() {
-  let iconStyles = {
-    color: "white",
-    fontSize: "16px",
-    lineHeight: "26px",
-    verticalAlign: "middle",
-  };
   return (
     <Container fluid className="px-0 about_us_page_main_wrapper ">
       <TheNavigationBar></TheNavigationBar>
@@ -26,9 +20,9 @@ function Contact() {
         <Container fluid className="about_section_hero_main_wrapper">
           <Container>
             <Row>
-              <Col className="d-flex justify-content-center px-0" lg={6}>
+              <Col className="d-flex" lg={6}>
                 <div className="about_section_hero_section">
-                  <h1>Careers</h1>
+                  <h1>Contact Us</h1>
                 </div>
               </Col>
               <Col className="about_hero_img_section px-0" lg={6}>

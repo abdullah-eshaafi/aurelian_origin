@@ -113,9 +113,9 @@
 .career_our_culture_heading > h6 {
   font-family: Ghost Clan;
   font-style: normal;
-  font-weight: normal;
-  font-size: 48px;
-  line-height: 42px;
+  font-weight: normal !important;
+  font-size: 48px !important;
+  line-height: 42px !important;
   /* identical to box height */
 
   text-transform: uppercase;
@@ -470,7 +470,7 @@
 }
 
 .career_last_inpurt___ {
-  margin-bottom: 101px;
+  margin-bottom: 32px;
 }
 .career_culture_img > img {
   width: 100%;
