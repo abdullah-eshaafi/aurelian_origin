@@ -415,7 +415,7 @@ function Careers() {
           </Row>
         </Container>
       </div>
-      <div style={{ marginTop: "83px" }}>
+      <div style={{ marginTop: "83px  " }}>
         <Footer></Footer>
       </div>
     </Container>
