@@ -26,7 +26,7 @@ function TheNavigantionBar(props) {
       variant="dark"
     >
       <Container>
-        <Navbar.Brand href="#home" className="my-1">
+        <Navbar.Brand href="/" className="my-1">
           <img src={aurelian_logo} alt="..." />
           <img src={aurelian} alt="..." className="mx-2" />
         </Navbar.Brand>

@@ -85,14 +85,18 @@ function TheSlider() {
 
             <div className="Homepage_arrows d-flex justify-content-between">
               <div className="margin_left_56 prev" onClick={slidePrev}>
-                <img src={Left_arrow} alt="..." />
+                <button>
+                  <img src={Left_arrow} alt="..." />
+                </button>
               </div>
               <div className="margin_right_56 next" onClick={slideNext}>
-                <img
-                  src={Right_arrow}
-                  alt="..."
-                  className="hompage_right_arrow"
-                />
+                <button>
+                  <img
+                    src={Right_arrow}
+                    alt="..."
+                    className="hompage_right_arrow"
+                  />
+                </button>
               </div>
             </div>
           </div>

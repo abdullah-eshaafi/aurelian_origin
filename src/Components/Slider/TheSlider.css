@@ -20,8 +20,17 @@
 .prev {
   cursor: pointer;
 }
+.prev > button {
+  background-color: transparent;
+  border: none;
+}
 .next {
   cursor: pointer;
+}
+
+.next > button {
+  background-color: transparent;
+  border: none;
 }
 .Homepage_arrows {
   width: 100vw;
