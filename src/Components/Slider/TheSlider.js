@@ -17,6 +17,8 @@ import slider7 from "../../Resources/Images/Slider/slider7.jpg";
 import Left_arrow from "../../Resources/Images/Slider/left_arrow.svg";
 import Right_arrow from "../../Resources/Images/Slider/Right_arrow.svg";
 
+import Fade from "react-reveal/Fade";
+
 function TheSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -76,32 +78,34 @@ function TheSlider() {
       fluid
       style={{ overflow: "hidden" }}
     >
-      <Row className="mx-0 px-0">
-        <Col className="mx-0 px-0">
-          <div className="Hompage-slider-wrapper">
-            <div className="slider-Image-wrapper">
-              <img src={slides[currentSlide].link} alt=".." />
-            </div>
+      <Fade left>
+        <Row className="mx-0 px-0">
+          <Col className="mx-0 px-0">
+            <div className="Hompage-slider-wrapper">
+              <div className="slider-Image-wrapper">
+                <img src={slides[currentSlide].link} alt=".." />
+              </div>
 
-            <div className="Homepage_arrows d-flex justify-content-between">
-              <div className="margin_left_56 prev" onClick={slidePrev}>
-                <button>
-                  <img src={Left_arrow} alt="..." />
-                </button>
-              </div>
-              <div className="margin_right_56 next" onClick={slideNext}>
-                <button>
-                  <img
-                    src={Right_arrow}
-                    alt="..."
-                    className="hompage_right_arrow"
-                  />
-                </button>
+              <div className="Homepage_arrows d-flex justify-content-between">
+                <div className="margin_left_56 prev" onClick={slidePrev}>
+                  <button>
+                    <img src={Left_arrow} alt="..." />
+                  </button>
+                </div>
+                <div className="margin_right_56 next" onClick={slideNext}>
+                  <button>
+                    <img
+                      src={Right_arrow}
+                      alt="..."
+                      className="hompage_right_arrow"
+                    />
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-        </Col>
-      </Row>
+          </Col>
+        </Row>
+      </Fade>
     </Container>
   );
 }
