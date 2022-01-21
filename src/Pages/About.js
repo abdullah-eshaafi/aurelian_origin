@@ -24,6 +24,8 @@ import Ceo_Ustad from "../Resources/Images/about/Ceo_Ustad.png";
 
 import Footer from "../Components/Footer/Footer";
 
+import VisibilitySensor from "react-visibility-sensor";
+
 // about_creativity
 function About() {
   return (
@@ -62,6 +64,7 @@ function About() {
           class_="about_section_text_wrapper"
           classImg="about_us_first"
           classText="about_story_far"
+          pos={"right"}
         />
       </div>
       <div>
@@ -75,6 +78,7 @@ function About() {
           class_="about_section_text_wrapper_second"
           classImg="about_us_second"
           classText="about_story_far_second"
+          pos={"left"}
         />
       </div>
       <div>
