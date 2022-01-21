@@ -26,7 +26,7 @@ function AboutTextImgSec({
           className={`d-flex justify-content-xl-${content} justify-content-center 
             px-0 ${orderfirst}`}
         >
-          <Fade duration={500} delay={500}>
+          <Fade duration={1000} delay={200}>
             <div className={`col-lg-8 col-md-8  col-sm-10 ${class_}`}>
               <div className={`${classText}`}>
                 <h2>{title}</h2>

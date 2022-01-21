@@ -23,8 +23,8 @@ import about_integrity from "../Resources/Images/about/about_integrity.png";
 import Ceo_Ustad from "../Resources/Images/about/Ceo_Ustad.png";
 
 import Footer from "../Components/Footer/Footer";
-
 import VisibilitySensor from "react-visibility-sensor";
+import Fade from "react-reveal/Fade";
 
 // about_creativity
 function About() {
@@ -114,74 +114,86 @@ function About() {
       </Row>
       <Row>
         <Col lg={12}>
-          <div className="about_us_values_sec">
-            <h3>our values</h3>
-          </div>
-          <div className="d-flex justify-content-center">
-            <div className="about_us_values_sec-para col-lg-6">
-              <p>
-                Our core values are the essential beliefs that are important to
-                us and guide our behavior and actions at all times. They are
-                timeless and enduring guiding principles that require no
-                exception or justifications. They hold value to Aurelian Origins
-                and all its employees and customers.
-              </p>
+          <Fade duration={2000} delay={200}>
+            <div className="about_us_values_sec">
+              <h3>our values</h3>
             </div>
-          </div>
+            <div className="d-flex justify-content-center">
+              <div className="about_us_values_sec-para col-lg-6">
+                <p>
+                  Our core values are the essential beliefs that are important
+                  to us and guide our behavior and actions at all times. They
+                  are timeless and enduring guiding principles that require no
+                  exception or justifications. They hold value to Aurelian
+                  Origins and all its employees and customers.
+                </p>
+              </div>
+            </div>
+          </Fade>
         </Col>
       </Row>
       <div className="about_element_main_wrapper">
         <div>
-          <AboutElements
-            title="Respect"
-            text="  Respect guides us in our daily interactions. We encourage our
+          <Fade duration={2000} delay={200}>
+            <AboutElements
+              title="Respect"
+              text="  Respect guides us in our daily interactions. We encourage our
                 team to express their opinions. We strive to create a culture
                 where employees are heard and valued for their ideas. It helps
                 us to move forward in a healthy work environment."
-            img={about_respect}
-            orderfirst={"order-xl-first order-last"}
-            orderLast={"order-last"}
-          />
+              img={about_respect}
+              orderfirst={"order-xl-first order-last"}
+              orderLast={"order-last"}
+            />
+          </Fade>
         </div>
         <div>
-          <AboutElements
-            title="Collaboration"
-            text="We push our team to work collectively without losing their individuality. Through honest communication we build trust and share knowledge to achieve our common goal. Collaboration is the key element to get our team aligned.          "
-            img={about_respect}
-            orderfirst={"order-last"}
-            orderLast={"order-xl-first order-last"}
-          />
+          <Fade duration={2000} delay={400}>
+            <AboutElements
+              title="Collaboration"
+              text="We push our team to work collectively without losing their individuality. Through honest communication we build trust and share knowledge to achieve our common goal. Collaboration is the key element to get our team aligned.          "
+              img={about_respect}
+              orderfirst={"order-last"}
+              orderLast={"order-xl-first order-last"}
+            />
+          </Fade>
         </div>
         <div>
-          <AboutElements
-            title="Creativity"
-            text="We inspire novel ideas in our team that bring originality in our work. This fuels innovation and challenges our way of thinking that ultimately leads to big ideas. Such experiments fully stimulate the team and enable them to be at their creative best.
+          <Fade duration={2000} delay={600}>
+            <AboutElements
+              title="Creativity"
+              text="We inspire novel ideas in our team that bring originality in our work. This fuels innovation and challenges our way of thinking that ultimately leads to big ideas. Such experiments fully stimulate the team and enable them to be at their creative best.
           "
-            img={about_creativity}
-            orderfirst={"order-xl-first order-last"}
-            orderLast={"order-last"}
-          />
+              img={about_creativity}
+              orderfirst={"order-xl-first order-last"}
+              orderLast={"order-last"}
+            />
+          </Fade>
         </div>
         <div>
-          <AboutElements
-            title="Passion"
-            text="We generate excitement through passion for what we do. With passion we nurture ideas, inspire excellence and find creative ways to eliminate obstacles. Our passion for our core purpose gives us courage to reach beyond our comfort zone.
+          <Fade duration={2000} delay={800}>
+            <AboutElements
+              title="Passion"
+              text="We generate excitement through passion for what we do. With passion we nurture ideas, inspire excellence and find creative ways to eliminate obstacles. Our passion for our core purpose gives us courage to reach beyond our comfort zone.
           "
-            img={about_passion}
-            orderfirst={"order-last"}
-            orderLast={"order-xl-first order-last"}
-          />
+              img={about_passion}
+              orderfirst={"order-last"}
+              orderLast={"order-xl-first order-last"}
+            />
+          </Fade>
         </div>
         <div>
-          <AboutElements
-            title="Integrity"
-            text="Integrity is the foundation of our organization. We are admired for our commitment to honesty and trustworthiness. We do the right thing, even when no one is watching. We do the right thing, even if it’s the hardest thing to do.
+          <Fade duration={2000} delay={1000}>
+            <AboutElements
+              title="Integrity"
+              text="Integrity is the foundation of our organization. We are admired for our commitment to honesty and trustworthiness. We do the right thing, even when no one is watching. We do the right thing, even if it’s the hardest thing to do.
           "
-            img={about_integrity}
-            orderfirst={"order-xl-first order-last"}
-            orderLast={"order-last"}
-            dis="none"
-          />
+              img={about_integrity}
+              orderfirst={"order-xl-first order-last"}
+              orderLast={"order-last"}
+              dis="none"
+            />
+          </Fade>
         </div>
       </div>
       <div className="element_bottome_yellow_line"></div>
