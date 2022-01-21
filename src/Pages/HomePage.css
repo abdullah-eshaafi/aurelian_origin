@@ -52,9 +52,10 @@
   width: 100%;
 }
 .homePage_bg_pic {
-  background-image: url("../Resources/Images//HomePage/HomePage_bg.jpg");
+  background-image: url("../Resources/Images//HomePage/code_bg.png");
   background-color: black;
   height: 800px;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

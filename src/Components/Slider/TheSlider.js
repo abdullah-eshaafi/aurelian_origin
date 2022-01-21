@@ -21,6 +21,7 @@ import Fade from "react-reveal/Fade";
 
 function TheSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [show, setShow] = useState(false);
 
   const slides = [
     {
@@ -53,23 +54,28 @@ function TheSlider() {
     },
   ];
   const slideNext = (e) => {
+    setShow(true);
     setCurrentSlide((prev) => {
       return prev + 1 === slides.length ? 0 : currentSlide + 1;
     });
   };
   const slidePrev = (e) => {
+    setShow(true);
     setCurrentSlide((prev) => {
       return prev === 0 ? slides.length - 1 : currentSlide - 1;
     });
   };
   React.useEffect(() => {
+    setShow(true);
     const intervalId = setInterval(() => {
       setCurrentSlide((prev) => {
         return prev + 1 === slides.length ? 0 : prev + 1;
       });
+      setShow(true);
     }, 4000);
     return () => {
       clearInterval(intervalId);
+      setShow(true);
     };
   }, [slides.length]);
   return (
@@ -78,34 +84,34 @@ function TheSlider() {
       fluid
       style={{ overflow: "hidden" }}
     >
-      <Fade left>
-        <Row className="mx-0 px-0">
-          <Col className="mx-0 px-0">
-            <div className="Hompage-slider-wrapper">
+      <Row className="mx-0 px-0">
+        <Col className="mx-0 px-0">
+          <div className="Hompage-slider-wrapper">
+            <Fade left when={show}>
               <div className="slider-Image-wrapper">
                 <img src={slides[currentSlide].link} alt=".." />
-              </div>
+              </div>{" "}
+            </Fade>
 
-              <div className="Homepage_arrows d-flex justify-content-between">
-                <div className="margin_left_56 prev" onClick={slidePrev}>
-                  <button>
-                    <img src={Left_arrow} alt="..." />
-                  </button>
-                </div>
-                <div className="margin_right_56 next" onClick={slideNext}>
-                  <button>
-                    <img
-                      src={Right_arrow}
-                      alt="..."
-                      className="hompage_right_arrow"
-                    />
-                  </button>
-                </div>
+            <div className="Homepage_arrows d-flex justify-content-between">
+              <div className="margin_left_56 prev" onClick={slidePrev}>
+                <button>
+                  <img src={Left_arrow} alt="..." />
+                </button>
+              </div>
+              <div className="margin_right_56 next" onClick={slideNext}>
+                <button>
+                  <img
+                    src={Right_arrow}
+                    alt="..."
+                    className="hompage_right_arrow"
+                  />
+                </button>
               </div>
             </div>
-          </Col>
-        </Row>
-      </Fade>
+          </div>
+        </Col>
+      </Row>
     </Container>
   );
 }

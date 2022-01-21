@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TheNavigationBar from "../Components/Navbar/TheNavigantionBar";
 import Slider from "../Components/Slider/TheSlider";
@@ -6,6 +6,10 @@ import "./HomePage.css";
 import HomePage_Who_text from "../Resources/Images/HomePage/HomePage_Who_text.png";
 import Footer from "../Components/Footer/Footer";
 
+import Fade from "react-reveal/Fade";
+
+import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 function HomePage() {
   return (
     <div className="Homepgae_start_website">
@@ -22,68 +26,84 @@ function HomePage() {
               >
                 <div className="d-flex justify-content-center">
                   <Col lg={8}>
-                    <div className="HomePage_Who_text">
-                      <h2>Who we are</h2>
-                    </div>
+                    <Fade duration={3000} top>
+                      <div className="HomePage_Who_text">
+                        <h2>Who we are</h2>
+                      </div>
+                    </Fade>
                   </Col>
                 </div>
 
                 <div className="d-flex justify-content-end">
                   <Col lg={10}>
-                    <div className="Myriad_normal_20_ color_white HomePage_Who_text">
-                      <p>
-                        Our goal is to develop exceptionally entertaining games.
-                        We believe in presenting high-quality, engaging, and
-                        innovative features in our games to be the best in the
-                        gaming industry. Our focus is not just development but
-                        also continuous improvement through data analysis. Our
-                        unique approach will lead us to excellence. We have a
-                        multi-talented team to accelerate our accomplishments
-                        because for us no dream is too big to achieve.
-                      </p>
-                    </div>
+                    <Fade duration={2000} delay={1000}>
+                      <div className="Myriad_normal_20_ color_white HomePage_Who_text">
+                        <p>
+                          Our goal is to develop exceptionally entertaining
+                          games. We believe in presenting high-quality,
+                          engaging, and innovative features in our games to be
+                          the best in the gaming industry. Our focus is not just
+                          development but also continuous improvement through
+                          data analysis. Our unique approach will lead us to
+                          excellence. We have a multi-talented team to
+                          accelerate our accomplishments because for us no dream
+                          is too big to achieve.
+                        </p>
+                      </div>
+                    </Fade>
                   </Col>
                 </div>
               </Col>
-              <Col lg={6} className="who_img_padding_top ">
-                <img src={HomePage_Who_text} alt="..." />
+
+              <Col lg={6}>
+                <Fade duration={2000} delay={2000} top distance={"100px"}>
+                  <div className="who_img_padding_top">
+                    <img src={HomePage_Who_text} alt="..." />
+                  </div>
+                </Fade>
               </Col>
             </Row>
           </Container>
         </div>
-        <div className="homePage_bg_pic ">
-          {" "}
+        <div className="homePage_bg_pic">
           <Container className="px-0">
-            <Row className="px-0 mx-0">
-              <Col
-                lg={5}
-                className="Ghost_normal_normal color_golden px-0 mx-0 padding_top_bottom_second"
-              >
-                <div className="d-flex justify-content-center">
-                  <Col lg={8}>
-                    <div className="HomePage_Who_text_second">
-                      <h2>Who we are</h2>
-                    </div>
-                  </Col>
-                </div>
+            <div>
+              <Row className="px-0 mx-0">
+                <Col
+                  lg={5}
+                  className="Ghost_normal_normal color_golden px-0 mx-0 padding_top_bottom_second"
+                >
+                  <div className="d-flex justify-content-center">
+                    <Col lg={8}>
+                      <Fade duration={3000} top>
+                        <div className="HomePage_Who_text_second">
+                          <h2>Who we are</h2>
+                        </div>
+                      </Fade>
+                    </Col>
+                  </div>
 
-                <div className="d-flex justify-content-end">
-                  <Col lg={10}>
-                    <div className="Myriad_normal_20_ color_white HomePage_Who_text_second">
-                      <p>
-                        Our team works passionately to develop marvelous games
-                        to ensure high-quality visualization and the best gaming
-                        experience in the world. We have started working on a
-                        mega project of AAA games for the first time in
-                        Pakistan. We are now more focused on employee well-being
-                        by initiating the provision of employee benefits.
-                      </p>
-                    </div>
-                  </Col>
-                </div>
-              </Col>
-              <Col lg={6} className="who_img_padding_top"></Col>
-            </Row>
+                  <div className="d-flex justify-content-end">
+                    <Col lg={10}>
+                      <Fade duration={2000} delay={1000}>
+                        <div className="Myriad_normal_20_ color_white HomePage_Who_text_second">
+                          <p>
+                            Our team works passionately to develop marvelous
+                            games to ensure high-quality visualization and the
+                            best gaming experience in the world. We have started
+                            working on a mega project of AAA games for the first
+                            time in Pakistan. We are now more focused on
+                            employee well-being by initiating the provision of
+                            employee benefits.
+                          </p>
+                        </div>
+                      </Fade>
+                    </Col>
+                  </div>
+                </Col>
+                <Col lg={6} className="who_img_padding_top"></Col>
+              </Row>
+            </div>
           </Container>
         </div>
         <div className="counting_numbers_Wrapper">
@@ -94,7 +114,24 @@ function HomePage() {
                   <div className="col-4 d-flex justify-content-center">
                     <div className="col-12 text-center">
                       <div className="Ghost_normal_80">
-                        <h2>50K</h2>
+                        <h2>
+                          <VisibilitySensor
+                            partialVisibility
+                            offset={{ bottom: 200 }}
+                          >
+                            {({ isVisible }) => (
+                              <div style={{ height: 100 }}>
+                                {isVisible ? (
+                                  <CountUp
+                                    end={50}
+                                    duration={2.75}
+                                    suffix="k"
+                                  />
+                                ) : null}
+                              </div>
+                            )}
+                          </VisibilitySensor>
+                        </h2>
                       </div>
                       <div>
                         <h6>Total Downloads</h6>
@@ -104,7 +141,24 @@ function HomePage() {
                   <div className="col-4">
                     <div className="col-12 text-center">
                       <div className="Ghost_normal_80">
-                        <h2>50+</h2>
+                        <h2>
+                          <VisibilitySensor
+                            partialVisibility
+                            offset={{ bottom: 200 }}
+                          >
+                            {({ isVisible }) => (
+                              <div style={{ height: 100 }}>
+                                {isVisible ? (
+                                  <CountUp
+                                    end={50}
+                                    duration={2.75}
+                                    suffix="+"
+                                  />
+                                ) : null}
+                              </div>
+                            )}
+                          </VisibilitySensor>
+                        </h2>
                       </div>
                       <div>
                         <h6>Products</h6>
@@ -114,7 +168,24 @@ function HomePage() {
                   <div className="col-4">
                     <div className="col-12 text-center">
                       <div className="Ghost_normal_80">
-                        <h2>100M+</h2>
+                        <h2>
+                          <VisibilitySensor
+                            partialVisibility
+                            offset={{ bottom: 200 }}
+                          >
+                            {({ isVisible }) => (
+                              <div style={{ height: 100 }}>
+                                {isVisible ? (
+                                  <CountUp
+                                    end={50}
+                                    duration={2.75}
+                                    suffix="M"
+                                  />
+                                ) : null}
+                              </div>
+                            )}
+                          </VisibilitySensor>
+                        </h2>
                       </div>
                       <div>
                         <h6>Active Users</h6>
