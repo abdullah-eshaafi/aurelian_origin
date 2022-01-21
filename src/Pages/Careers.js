@@ -30,6 +30,7 @@ import paid from "../Resources/Images/career/paid.svg";
 import { CareerData } from "../Components/Careers/CareerData.js";
 
 import Footer from "../Components/Footer/Footer";
+import Fade from "react-reveal/Fade";
 
 function Careers() {
   const responsive = {
@@ -199,20 +200,22 @@ function Careers() {
               lg={6}
               className="d-flex justify-content-center align-items-center"
             >
-              <div className="col-lg-9">
-                <div className="career_our_culture_heading">
-                  <h6>our culture</h6>
-                </div>
-                <div className="career_our_culture_text">
-                  <p>
-                    We believe in building a culture where employee engagement,
-                    loyalty, learning, and dedication is encouraged. We strive
-                    to empower our employees to step out of their comfort zones
-                    and embrace new challenges for both personal and
-                    professional growth.
-                  </p>
-                </div>
-              </div>
+              <Fade duration={2000} delay={200}>
+                <div className="col-lg-9">
+                  <div className="career_our_culture_heading">
+                    <h6>our culture</h6>
+                  </div>
+                  <div className="career_our_culture_text">
+                    <p>
+                      We believe in building a culture where employee
+                      engagement, loyalty, learning, and dedication is
+                      encouraged. We strive to empower our employees to step out
+                      of their comfort zones and embrace new challenges for both
+                      personal and professional growth.
+                    </p>
+                  </div>
+                </div>{" "}
+              </Fade>
             </Col>
             <Col lg={6}>
               <div className="career_culture_img">
@@ -231,19 +234,21 @@ function Careers() {
               lg={6}
               className="d-flex justify-content-center align-items-center"
             >
-              <div className="col-lg-9">
-                <div className="career_our_culture_heading">
-                  <h6>opportunities</h6>
+              <Fade duration={2000} delay={200}>
+                <div className="col-lg-9">
+                  <div className="career_our_culture_heading">
+                    <h6>opportunities</h6>
+                  </div>
+                  <div className="career_our_culture_text">
+                    <p>
+                      Aurelian Origins provides excellent career opportunities
+                      to those who want to explore and express their talent. If
+                      you are passionate to bring innovation in the gaming, you
+                      could be the ONE!
+                    </p>
+                  </div>
                 </div>
-                <div className="career_our_culture_text">
-                  <p>
-                    Aurelian Origins provides excellent career opportunities to
-                    those who want to explore and express their talent. If you
-                    are passionate to bring innovation in the gaming, you could
-                    be the ONE!
-                  </p>
-                </div>
-              </div>
+              </Fade>
             </Col>
           </Row>
           <Row>
@@ -265,60 +270,72 @@ function Careers() {
           <Row className="employee_benefits_wrapper">
             <Col lg={12} md={12} className="d-flex justify-content-center">
               <div className="col-lg-12  d-lg-flex justify-content-between">
-                <div className="col-lg-4  text-center reward_wrapper">
-                  <div>
-                    <img src={Heart_icon} alt="..."></img>
+                <Fade duration={2000} delay={200}>
+                  <div className="col-lg-4  text-center reward_wrapper">
+                    <div>
+                      <img src={Heart_icon} alt="..."></img>
+                    </div>
+                    <div className="craeer_employee_wellBeing">
+                      <p>Employee Wellbeing</p>
+                    </div>
                   </div>
-                  <div className="craeer_employee_wellBeing">
-                    <p>Employee Wellbeing</p>
+                </Fade>
+                <Fade duration={2000} delay={400}>
+                  <div className="col-lg-4  text-center reward_wrapper">
+                    <div>
+                      <img src={attandance} alt="..."></img>
+                    </div>
+                    <div className="craeer_employee_wellBeing">
+                      <p>Attendance Rewards</p>
+                    </div>
                   </div>
-                </div>
-                <div className="col-lg-4  text-center reward_wrapper">
-                  <div>
-                    <img src={attandance} alt="..."></img>
+                </Fade>
+                <Fade duration={2000} delay={600}>
+                  <div className="col-lg-4 text-center reward_wrapper">
+                    <div>
+                      <img src={paid_leave} alt="..."></img>
+                    </div>
+                    <div className="craeer_employee_wellBeing">
+                      <p>Paid Leaves</p>
+                    </div>
                   </div>
-                  <div className="craeer_employee_wellBeing">
-                    <p>Attendance Rewards</p>
-                  </div>
-                </div>
-                <div className="col-lg-4 text-center reward_wrapper">
-                  <div>
-                    <img src={paid_leave} alt="..."></img>
-                  </div>
-                  <div className="craeer_employee_wellBeing">
-                    <p>Paid Leaves</p>
-                  </div>
-                </div>
+                </Fade>
               </div>
             </Col>
           </Row>
           <Row className="employee_career_well_beign_second">
             <Col lg={12} className="d-flex justify-content-center">
               <div className="col-lg-12 d-lg-flex justify-content-between">
-                <div className="col-lg-4 text-center reward_wrapper">
-                  <div>
-                    <img src={loyality} alt="..."></img>
+                <Fade duration={2000} delay={600}>
+                  <div className="col-lg-4 text-center reward_wrapper">
+                    <div>
+                      <img src={loyality} alt="..."></img>
+                    </div>
+                    <div className="craeer_employee_wellBeing">
+                      <p>Loyalty Rewards</p>
+                    </div>
                   </div>
-                  <div className="craeer_employee_wellBeing">
-                    <p>Loyalty Rewards</p>
+                </Fade>
+                <Fade duration={2000} delay={800}>
+                  <div className="col-lg-4 text-center reward_wrapper">
+                    <div>
+                      <img src={provident} alt="..."></img>
+                    </div>
+                    <div className="craeer_employee_wellBeing">
+                      <p>Provident Fund</p>
+                    </div>
                   </div>
-                </div>
-                <div className="col-lg-4 text-center reward_wrapper">
-                  <div>
-                    <img src={provident} alt="..."></img>
+                </Fade>
+                <Fade duration={2000} delay={1000}>
+                  <div className="col-lg-4 text-center reward_wrapper">
+                    <div>
+                      <img src={paid} alt="..."></img>
+                    </div>
+                    <div className="craeer_employee_wellBeing">
+                      <p>Paid Overtime</p>
+                    </div>
                   </div>
-                  <div className="craeer_employee_wellBeing">
-                    <p>Provident Fund</p>
-                  </div>
-                </div>
-                <div className="col-lg-4 text-center reward_wrapper">
-                  <div>
-                    <img src={paid} alt="..."></img>
-                  </div>
-                  <div className="craeer_employee_wellBeing">
-                    <p>Paid Overtime</p>
-                  </div>
-                </div>
+                </Fade>
               </div>
             </Col>
           </Row>

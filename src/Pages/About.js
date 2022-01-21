@@ -23,7 +23,7 @@ import about_integrity from "../Resources/Images/about/about_integrity.png";
 import Ceo_Ustad from "../Resources/Images/about/Ceo_Ustad.png";
 
 import Footer from "../Components/Footer/Footer";
-import VisibilitySensor from "react-visibility-sensor";
+
 import Fade from "react-reveal/Fade";
 
 // about_creativity

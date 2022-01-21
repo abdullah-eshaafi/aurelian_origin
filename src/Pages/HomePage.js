@@ -26,7 +26,7 @@ function HomePage() {
               >
                 <div className="d-flex justify-content-center">
                   <Col lg={8}>
-                    <Fade duration={3000} top>
+                    <Fade duration={1000} top>
                       <div className="HomePage_Who_text">
                         <h2>Who we are</h2>
                       </div>
@@ -36,7 +36,7 @@ function HomePage() {
 
                 <div className="d-flex justify-content-end">
                   <Col lg={10}>
-                    <Fade duration={2000} delay={1000}>
+                    <Fade duration={1000} delay={1000}>
                       <div className="Myriad_normal_20_ color_white HomePage_Who_text">
                         <p>
                           Our goal is to develop exceptionally entertaining
@@ -56,7 +56,7 @@ function HomePage() {
               </Col>
 
               <Col lg={6}>
-                <Fade duration={2000} delay={2000} top distance={"100px"}>
+                <Fade duration={1000} delay={1000} top distance={"100px"}>
                   <div className="who_img_padding_top">
                     <img src={HomePage_Who_text} alt="..." />
                   </div>
@@ -75,7 +75,7 @@ function HomePage() {
                 >
                   <div className="d-flex justify-content-center">
                     <Col lg={8}>
-                      <Fade duration={3000} top>
+                      <Fade duration={1000} top>
                         <div className="HomePage_Who_text_second">
                           <h2>Who we are</h2>
                         </div>
@@ -85,7 +85,7 @@ function HomePage() {
 
                   <div className="d-flex justify-content-end">
                     <Col lg={10}>
-                      <Fade duration={2000} delay={1000}>
+                      <Fade duration={1000} delay={1000}>
                         <div className="Myriad_normal_20_ color_white HomePage_Who_text_second">
                           <p>
                             Our team works passionately to develop marvelous
