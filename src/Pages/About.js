@@ -43,7 +43,10 @@ function About() {
               </div>
             </Col>
             <Col className="about_hero_img_section px-0" lg={6}>
-              <div className="about_hero_img_sec">
+              <div
+                className="about_hero_img_sec"
+                style={{ marginLeft: "50px" }}
+              >
                 <img src={abput_hero_bg} alt="..."></img>
               </div>
             </Col>
@@ -76,11 +79,13 @@ function About() {
           img={about_us_second}
           orderfirst={"order-lg-last order-first"}
           orderLast={"order-first"}
-          content="start"
+          content="center"
           class_="about_section_text_wrapper_second"
           classImg="about_us_second"
           classText="about_story_far_second"
           pos={"left"}
+          c1="5"
+          c2="7"
         />
       </div>
       <div>
@@ -90,10 +95,12 @@ function About() {
           img={about_us_three}
           orderfirst={"order-first"}
           orderLast={"order-last"}
-          content="end"
+          content="center"
           class_="about_section_text_wrapper_third"
           classImg="about_us_second"
           classText="about_story_far_third"
+          c1="7"
+          c2="5"
         />
       </div>
       <div>
@@ -103,10 +110,12 @@ function About() {
           img={about_us_four}
           orderfirst={"order-lg-last order-first"}
           orderLast={"order-first"}
-          content="start"
+          content="center"
           class_="about_section_text_wrapper_second"
           classImg="about_us_second"
           classText="about_story_far_second"
+          c1="5"
+          c2="7"
         />
       </div>
       <Row>

@@ -43,13 +43,16 @@
   padding-bottom: 244.5px;
 }
 .who_img_padding_top {
-  padding-top: 144.5px;
+  padding-top: 100.5px;
   position: relative;
 }
-.who_img_padding_top > img {
+#my_video {
   padding-left: 138px;
   transform: skewY(3.5deg);
-  width: 100%;
+  width: 50vw;
+  height: 70vh;
+
+  object-fit: cover;
 }
 .homePage_bg_pic {
   background-image: url("../Resources/Images//HomePage/img.png");
@@ -170,12 +173,20 @@ transform: matrix(-1, 0, 0, 1, 0, 0); */
 @media screen and (max-width: 992px) {
   .padding_top_bottom {
     padding-top: 61px;
-    padding-bottom: 61px;
+    padding-bottom: 8px;
   }
 
   .who_img_padding_top {
     padding-top: 20px;
     padding-bottom: 40px;
+  }
+  #my_video {
+    padding-left: 70px;
+    transform: skewY(3.5deg);
+    width: 70vw;
+    height: 70vh;
+
+    object-fit: cover;
   }
 }
 
@@ -214,5 +225,33 @@ transform: matrix(-1, 0, 0, 1, 0, 0); */
   .homePage_bg_pic {
     background-color: black;
     height: auto;
+  }
+
+  .who_img_padding_top {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  #my_video {
+    padding-left: 70px;
+    transform: skewY(3.5deg);
+    width: 70vw;
+    height: 50vh;
+
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .who_img_padding_top {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  #my_video {
+    padding-left: 4px;
+    transform: skewY(3.5deg);
+    width: 90vw;
+    height: 40vh;
+
+    object-fit: cover;
   }
 }

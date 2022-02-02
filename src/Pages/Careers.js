@@ -15,6 +15,8 @@ import kh from "../Resources/Images/career/kh.svg";
 
 import career_culture_first from "../Resources/Images/career/career_culture_first.png";
 
+import career_culture_second from "../Resources/Images/career/career_culture_second.png";
+
 import Heart_icon from "../Resources/Images/career/Heart_icon.svg";
 
 import attandance from "../Resources/Images/career/attandance.svg";
@@ -91,10 +93,10 @@ function Careers() {
                   <h1>Careers</h1>
                 </div>
               </Col>
-              <Col className="about_hero_img_section px-0" lg={6}>
-                <div className="abput_hero_bg">
-                  <img src={abput_hero_bg} alt="..."></img>
-                </div>
+              <Col
+                className="about_hero_img_section px-0 d-flex justify-content-center"
+                lg={6}
+              >
                 <div
                   className="about_hero_img_sec"
                   style={{ marginLeft: "50px" }}
@@ -227,7 +229,7 @@ function Careers() {
           <Row className="career_culture_wrapper">
             <Col lg={6} className="order-last order-lg-first">
               <div className="career_culture_img">
-                <img src={career_culture_first} alt="...." />
+                <img src={career_culture_second} alt="...." />
               </div>
             </Col>
             <Col

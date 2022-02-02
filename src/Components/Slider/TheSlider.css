@@ -1,12 +1,12 @@
 .Hompage-slider-wrapper {
-  width: 100vw;
+  width: 99vw;
   height: 88vh;
   overflow: hidden;
   background: #000000;
 }
 
 .slider-Image-wrapper > img {
-  width: 100vw;
+  width: 100%;
   height: 88vh;
   object-fit: fill;
   overflow: hidden;

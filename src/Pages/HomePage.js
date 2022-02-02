@@ -11,6 +11,8 @@ import Fade from "react-reveal/Fade";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 function HomePage() {
+  let videoURL =
+    "https://terafort.s3.ap-southeast-1.amazonaws.com/Untitled.mp4";
   return (
     <div className="Homepgae_start_website">
       <TheNavigationBar />
@@ -58,7 +60,9 @@ function HomePage() {
               <Col lg={6}>
                 <Fade duration={1000} delay={1000} top distance={"100px"}>
                   <div className="who_img_padding_top">
-                    <img src={HomePage_Who_text} alt="..." />
+                    <video autoPlay muted loop id="my_video">
+                      <source src={videoURL} type="video/mp4" />
+                    </video>
                   </div>
                 </Fade>
               </Col>

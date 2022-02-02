@@ -34,6 +34,13 @@
   width: 100%;
 }
 
+.blog_main_img_ {
+  margin-top: 64px;
+}
+
+.blog_main_img_ > img {
+  width: 100%;
+}
 .blog_com_main_wrapper {
   margin-bottom: 100px;
 }

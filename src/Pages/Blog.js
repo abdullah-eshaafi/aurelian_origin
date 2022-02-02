@@ -6,6 +6,9 @@ import "./Blog.css";
 import blogImg from "../Resources/Images/Blog/blogImg.png";
 
 import boy_addressing from "../Resources/Images/Blog/boy_addressing.png";
+import girl_addressing from "../Resources/Images/Blog/girl_addressing.png";
+
+import party from "../Resources/Images/Blog/party.png";
 import Footer from "../Components/Footer/Footer";
 function Blog() {
   return (
@@ -106,7 +109,9 @@ function Blog() {
                 get the best out of talent.
               </p>
             </div>
-
+            <div className="blog_main_img">
+              <img src={girl_addressing} alt="..."></img>
+            </div>
             <div className="blog_main_para">
               <p>
                 Aurelian Origins has always put employees at the forefront. A
@@ -132,6 +137,9 @@ function Blog() {
           </Col>
         </Row>
       </Container>
+      <div className="blog_main_img_">
+        <img src={party} alt="..."></img>
+      </div>
       <Footer></Footer>
     </Container>
   );

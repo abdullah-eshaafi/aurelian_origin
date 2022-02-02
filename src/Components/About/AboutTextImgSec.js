@@ -21,7 +21,7 @@ function AboutTextImgSec({
     <Container>
       <Row>
         <Col
-          lg={7}
+          lg={c1}
           md={10}
           sm={10}
           xs={12}
@@ -39,7 +39,7 @@ function AboutTextImgSec({
             </div>
           </Fade>
         </Col>
-        <Col lg={5} md={12} sm={12} xs={12} className={`px-0 ${orderLast}`}>
+        <Col lg={c2} md={12} sm={12} xs={12} className={`px-0 ${orderLast}`}>
           <div className={`${classImg}`}>
             <img src={img} alt="..."></img>
           </div>
