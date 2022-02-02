@@ -9,6 +9,7 @@ import abput_hero_bg from "../Resources/Images/about/abput_hero_bg.png";
 import about_us_first from "../Resources/Images/about/about_us_first.png";
 import about_us_second from "../Resources/Images/about/about_us_second.png";
 import about_us_three from "../Resources/Images/about/about_us_three.png";
+import about_us_four from "../Resources/Images/about/about_us_four.png";
 
 import AboutTextImgSec from "../Components/About/AboutTextImgSec";
 
@@ -26,6 +27,8 @@ import Footer from "../Components/Footer/Footer";
 
 import Fade from "react-reveal/Fade";
 
+import image from "../Resources/Images/career/image.jpg";
+
 // about_creativity
 function About() {
   return (
@@ -34,17 +37,14 @@ function About() {
       <Container fluid className="about_section_hero_main_wrapper">
         <Container>
           <Row>
-            <Col className="d-flex " lg={6}>
+            <Col className="d-flex justify-content-center" lg={6}>
               <div className="about_section_hero_section">
                 <h1>About us</h1>
               </div>
             </Col>
             <Col className="about_hero_img_section px-0" lg={6}>
-              <div className="abput_hero_bg">
-                <img src={abput_hero_bg} alt="..."></img>
-              </div>
               <div className="about_hero_img_sec">
-                <img src={about_hero_img} alt="..."></img>
+                <img src={abput_hero_bg} alt="..."></img>
               </div>
             </Col>
           </Row>
@@ -60,11 +60,13 @@ function About() {
           img={about_us_first}
           orderfirst={"order-first"}
           orderLast={"order-last"}
-          content="end"
+          content="center"
           class_="about_section_text_wrapper"
           classImg="about_us_first"
           classText="about_story_far"
           pos={"right"}
+          c1="7"
+          c2="5"
         />
       </div>
       <div>
@@ -98,7 +100,7 @@ function About() {
         <AboutTextImgSec
           title="MISSION"
           text="Our Mission is to create high quality, engaging, entertaining, and unique games for all platforms to provide an outstanding user experience and to enable talent in reaching their full potential through innovative tools and technology to lead and transform the gaming industry in all aspects."
-          img={about_us_second}
+          img={about_us_four}
           orderfirst={"order-lg-last order-first"}
           orderLast={"order-first"}
           content="start"

@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 
 import Fade from "react-reveal/Fade";
 import VisibilitySensor from "react-visibility-sensor";
@@ -14,12 +14,14 @@ function AboutTextImgSec({
   class_,
   classImg,
   classText,
+  c1,
+  c2,
 }) {
   return (
-    <div>
+    <Container>
       <Row>
         <Col
-          lg={6}
+          lg={7}
           md={10}
           sm={10}
           xs={12}
@@ -37,13 +39,13 @@ function AboutTextImgSec({
             </div>
           </Fade>
         </Col>
-        <Col lg={6} md={12} sm={12} xs={12} className={`px-0 ${orderLast}`}>
+        <Col lg={5} md={12} sm={12} xs={12} className={`px-0 ${orderLast}`}>
           <div className={`${classImg}`}>
             <img src={img} alt="..."></img>
           </div>
         </Col>
       </Row>
-    </div>
+    </Container>
   );
 }
 
