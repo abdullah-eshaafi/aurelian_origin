@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TheNavigantionBar from "../Components/Navbar/TheNavigantionBar.js";
 import "./Career.css";
+import abput_hero_bg from "../Resources/Images/about/abput_hero_bg.png";
+import axios from "axios";
 
 import career_hero_img from "../Resources/Images/career/career_hero_img.png";
 
@@ -34,6 +36,287 @@ import Footer from "../Components/Footer/Footer";
 import Fade from "react-reveal/Fade";
 
 function Careers() {
+  const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+  const careerList = [
+    "",
+    "IOS Developer",
+    "Android Developer",
+    "Backend Developer",
+    "Frontend Developer",
+    "DevOps Engr",
+    "UI/UX Designer",
+    "SEO Expert",
+    "Data Analyst",
+    "Computer Graphic Artist",
+    "Unity Developer",
+    "3D Modeler",
+    "2D Animator",
+    "Game Designer/Planner",
+    "Software Quality Assurance",
+    "Accounts Executive",
+    "HR Executive",
+    "Computer Vision",
+  ];
+
+  const [spiner, setSpiner] = useState("");
+  const [success_message, setSuccess_Message] = useState("");
+
+  const [full_name, setFullName] = useState("");
+  const [error_name, setError_name] = useState("");
+  const [nameClass, setNameClass] = useState("");
+
+  const [last_name, setlastName] = useState("");
+  const [error_lname, setError_lname] = useState("");
+  const [lnameLClass, setLNameClass] = useState("");
+
+  const [PhoneNumber, setPhoneNumber] = useState("");
+  const [phoneClass, setPhoneClass] = useState("");
+  const [error_phone, setError_phone] = useState("");
+
+  const [email, setEmail] = useState("");
+  const [emailClass, setEmailClass] = useState("");
+  const [error_email, setError_email] = useState("");
+
+  const [apply_for, setApplyFor] = useState("");
+  const [error_apply, setError_apply] = useState("");
+  const [applyClass, setapplyClass] = useState("");
+
+  const [city, setCity] = useState("");
+  const [error_city, setError_city] = useState("");
+  const [cityclass, setClassCity] = useState("");
+
+  const [attachments, setAttachment] = useState("");
+  const [error_file, setError_file] = useState("");
+  const [fileClass, setfileClass] = useState("");
+
+  const [portfolio, setportfolio] = useState("");
+  const [error_portfolio, setError_portfolio] = useState("");
+  const [portfolioClass, setportfolioClass] = useState("");
+
+  console.log(
+    full_name,
+    last_name,
+    PhoneNumber,
+    email,
+    apply_for,
+    city,
+    attachments,
+    portfolio
+  );
+
+  const handleNameChange = (e) => {
+    let element = e.target;
+    element.value = element.value.replace(/[^A-Za-z\s]/gi, "");
+    setFullName(e.target.value);
+    setNameClass("");
+    setError_name("");
+
+    // console.log(Name)
+  };
+  //===================================== handle name Validate function  ===============================
+  const handleNameValidate = (e) => {
+    if (full_name === "") {
+      setNameClass("");
+      setError_name("");
+    }
+  };
+  const handlePortfolioChange = (e) => {
+    let element = e.target;
+    element.value = element.value.replace(/[^A-Za-z\s]/gi, "");
+    setportfolio(e.target.value);
+    setError_portfolio("");
+    setError_portfolio("");
+  };
+
+  const handleLastNameChange = (e) => {
+    let element = e.target;
+    element.value = element.value.replace(/[^A-Za-z\s]/gi, "");
+    setlastName(e.target.value);
+    setLNameClass("");
+    setError_lname("");
+  };
+
+  const handleLNameValidate = (e) => {
+    if (last_name === "") {
+      setLNameClass("");
+      setError_lname("");
+    }
+  };
+
+  const handleNumberChange = (e) => {
+    let element = e.target;
+    element.value = element.value.replace(/[^0-9]/gi, "");
+    setPhoneNumber(e.target.value);
+    if (PhoneNumber === "") {
+      setPhoneClass("");
+      setError_phone("");
+    }
+  };
+
+  const handlePhoneValidate = (e) => {
+    if (PhoneNumber === "") {
+      setPhoneClass("");
+      setError_phone("");
+    }
+    if (PhoneNumber.length < 11) {
+      setPhoneClass("error-field3");
+      setError_phone("Please enter a valid phone number");
+    } else {
+      setPhoneClass("");
+      setError_phone("");
+    }
+  };
+
+  const handleApplyChange = (e) => {
+    setapplyClass("");
+    setError_apply("");
+    // console.log(text)
+  };
+
+  //===================================== handle setApplyFor input field function  ===============================
+  const handleApplyFor = (e) => {
+    setApplyFor(e.target.value);
+  };
+
+  const handleAttachment = (file) => {
+    setAttachment(file[0]);
+    if (attachments !== "") {
+      setError_file("");
+    }
+    // console.log(attachment)
+  };
+  //===================================== handle submit function  ===============================
+  const handlefileAttachment = (file) => {
+    if (attachments !== "") {
+      setfileClass("");
+      setError_file("");
+    }
+    if (attachments === "") {
+      setfileClass("");
+      setError_file("");
+    }
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+    setEmailClass("");
+    setError_email("");
+    // console.log(email)
+  };
+  //===================================== handle email Validate function  ===============================
+  const handleEmailValidate = (e) => {
+    if (email === "") {
+      setError_email("");
+      setEmailClass("");
+    }
+    if (email !== "") {
+      if (email.match(regexEmail)) {
+        setError_email("");
+      } else {
+        setEmailClass("error-field3");
+        setError_email("Please enter a valid email");
+      }
+    }
+  };
+
+  const handleCityChange = (e) => {
+    let element = e.target;
+    element.value = element.value.replace(/[^A-Za-z\s]/gi, "");
+    setCity(e.target.value);
+    setClassCity("");
+    setError_city("");
+  };
+
+  const handleSubmit = (e) => {
+    if (
+      full_name === "" ||
+      last_name === "" ||
+      PhoneNumber === "" ||
+      apply_for === "" ||
+      email === "" ||
+      attachments === ""
+    ) {
+      setNameClass("error-field3");
+      setError_name("Please enter a valid name");
+      setEmailClass("error-field3");
+      setError_email("Please enter a valid email");
+      setapplyClass("error-field3");
+      setError_apply("Please select a field");
+      setfileClass("error-field3");
+      setError_file("Please upload your cv");
+      setError_lname("Please enter a valid name");
+      setLNameClass("error-field3");
+      setPhoneClass("error-field3");
+      setError_phone("Please enter a Phone Number");
+
+      if (full_name !== "") {
+        setNameClass("");
+        setError_name("");
+      }
+      if (last_name !== "") {
+        setError_lname("");
+        setLNameClass("");
+      }
+
+      if (PhoneNumber !== "") {
+        setError_phone("");
+        setPhoneClass("");
+      }
+      if (email !== "") {
+        if (email.match(regexEmail)) {
+          setEmailClass("");
+          setError_email("");
+        }
+      }
+      if (apply_for !== "") {
+        setapplyClass("");
+        setError_apply("");
+      }
+      if (attachments !== "") {
+        setfileClass("");
+        setError_file("");
+      }
+    } else {
+      setSpiner("spinner-border");
+      const fData = new FormData();
+      fData.append("full_name", full_name);
+      fData.append("last_name", last_name);
+      fData.append("email", email);
+      fData.append("apply_for", apply_for);
+      fData.append("attachments", attachments);
+      fData.append("city", city);
+      fData.append("portfolio_link", portfolio);
+      fData.append("contact_no", PhoneNumber);
+
+      axios
+        .post("http://192.168.1.24:8000/api/applyForCareer", fData)
+        .then((r) => {
+          console.log(r);
+          if (r.status === 200) {
+            setSpiner("");
+            setSuccess_Message("Sent successfully");
+            setTimeout((e) => {
+              setSuccess_Message("");
+              setSpiner("");
+              setFullName("");
+              setEmail("");
+              setApplyFor("");
+              setAttachment("");
+            }, 2000);
+            // console.log("dfgrf");
+          }
+        })
+        .catch((e) => {
+          setSpiner("");
+        });
+    }
+
+    // console.log(apply_for)
+    // console.log(attachments)
+    // e.preventDefault();
+  };
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -375,41 +658,121 @@ function Careers() {
             <Col>
               <div className="col-lg-12 col-12 d-lg-flex justify-content-center">
                 <div className="col-lg-5 col-12 career_jojn_form">
-                  <input type="text" placeholder="First Name"></input>
+                  <input
+                    type="text"
+                    name="full_name"
+                    id="input-text"
+                    value={full_name}
+                    className={nameClass}
+                    required
+                    spellCheck="false"
+                    onChange={handleNameChange}
+                    onBlur={handleNameValidate}
+                    autoComplete={"off"}
+                    placeholder="First Name"
+                  ></input>
+                  <p className={nameClass}>{error_name}</p>
                 </div>
                 <div className="col-lg-5 col-12 career_jojn_form">
-                  <input type="text" placeholder="Last Name"></input>
+                  <input
+                    type="text"
+                    name="last_name"
+                    id="input-text"
+                    value={last_name}
+                    className={lnameLClass}
+                    required
+                    spellCheck="false"
+                    onChange={handleLastNameChange}
+                    onBlur={handleLNameValidate}
+                    autoComplete={"off"}
+                    placeholder="Last Name"
+                  ></input>
+                  <p className={lnameLClass}>{error_lname}</p>
                 </div>
               </div>
 
               <div className="col-lg-12 col-12 d-lg-flex justify-content-center">
                 <div className="col-lg-5 col-12 career_jojn_form">
-                  <input type="text" placeholder="Contact Number"></input>
+                  <input
+                    type="text"
+                    maxLength={15}
+                    required
+                    spellCheck="false"
+                    className={phoneClass}
+                    value={PhoneNumber}
+                    onChange={handleNumberChange}
+                    onBlur={handlePhoneValidate}
+                    placeholder="Contact Number"
+                  ></input>
+                  <p className={phoneClass}>{error_phone}</p>
                 </div>
                 <div className="col-lg-5 col-12 career_jojn_form">
-                  <input type="text" placeholder="Email"></input>
+                  <input
+                    type="text"
+                    name="email"
+                    id="input-text"
+                    required
+                    spellCheck="false"
+                    className={emailClass}
+                    value={email}
+                    onChange={handleEmailChange}
+                    onBlur={handleEmailValidate}
+                    autoComplete={"off"}
+                    placeholder="Email"
+                  ></input>
+                  <p className={emailClass}>{error_email}</p>
                 </div>
               </div>
 
               <div className="col-lg-12 col-12 d-lg-flex justify-content-center">
                 <div className="col-lg-5 col-12 career_jojn_form select">
-                  <select>
-                    <option value="" disabled selected>
-                      Select your option
-                    </option>
-                    <option value="2">No JS</option>
-                    <option value="3">Nice!</option>
+                  <select
+                    required
+                    spellCheck="false"
+                    className={applyClass}
+                    onBlur={handleApplyChange}
+                    onChange={handleApplyFor}
+                    value={apply_for}
+                  >
+                    {careerList.map((data) => {
+                      return (
+                        <>
+                          <option value={data} key={data}>
+                            {data}
+                          </option>
+                        </>
+                      );
+                    })}
                   </select>
+                  <p className={applyClass}>{error_apply}</p>
                 </div>
                 <div className="col-lg-5 col-12 career_jojn_form">
-                  <input type="text" placeholder="City"></input>
+                  <input
+                    type="text"
+                    name="city"
+                    id="input-text"
+                    value={city}
+                    className={cityclass}
+                    required
+                    spellCheck="false"
+                    onChange={handleCityChange}
+                    autoComplete={"off"}
+                    placeholder="City"
+                  ></input>
                 </div>
               </div>
               <div className="col-lg-12 col-12 d-flex justify-content-center px-0">
                 <div className="col-lg-11 col-12 career_jojn_form_ d-flex justify-content-center careers_upload_file">
                   <div className="d-flex justify-content-center align-items-center content_main_last_div">
                     {" "}
-                    <input type="file"></input>
+                    <input
+                      type="file"
+                      accept=".doc, .docx, application/pdf"
+                      id="file-upload"
+                      onChange={(e) => handleAttachment(e.target.files)}
+                      onBlur={handlefileAttachment}
+                    ></input>
+                    <p className={fileClass}>{error_file}</p>
                     <div>
                       {" "}
                       <h1 className="d-flex">
@@ -421,12 +784,26 @@ function Careers() {
               </div>
               <div className="col-lg-12 col-12 d-flex justify-content-center career_last_inpurt___">
                 <div className="col-lg-11 col-12 career_jojn_form__ d-flex justify-content-center">
-                  <input type="text" placeholder="Email"></input>
+                  <input
+                    type="text"
+                    name="portfolio"
+                    id="input-text"
+                    value={portfolio}
+                    className={portfolioClass}
+                    required
+                    spellCheck="false"
+                    onChange={handlePortfolioChange}
+                    autoComplete={"off"}
+                    placeholder="Portfolio Link"
+                  ></input>
                 </div>
               </div>
               <div className="col-lg-12 col-12 d-flex justify-content-center career_last_inpurt___">
                 <div className="col-lg-11 col-12 career_jojn_form__ d-flex justify-content-center">
-                  <button>SUBMIT</button>
+                  <button onClick={handleSubmit}>
+                    <div className={spiner}></div>SUBMIT
+                  </button>
+                  <p className={"m-0"}>{success_message}</p>
                 </div>
               </div>
             </Col>
