@@ -12,7 +12,7 @@ import footer_map from "../../Resources/Images/Footer/footer_map.png";
 import close from "../../Resources/Images/Footer/close.svg";
 
 import axios from "axios";
-
+import { Link } from "react-router-dom";
 function Footer() {
   const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; // Regex for Email.
   const [email, setEmail] = useState("");
@@ -145,19 +145,31 @@ function Footer() {
 
                 <div className="d-flex">
                   <div className="footer_fb_icon">
-                    <FaFacebookF
-                      style={iconStyles}
-                      className="fb_icon_hover_effect"
-                      onMouseOver={(e) => (e.target.style.color = "#FFC000")}
-                      onMouseOut={(e) => (e.target.style.color = "white")}
-                    />
+                    <a
+                      href="https://www.facebook.com/AurelianOrigins/"
+                      target="_blank"
+                    >
+                      {" "}
+                      <FaFacebookF
+                        style={iconStyles}
+                        className="fb_icon_hover_effect"
+                        onMouseOver={(e) => (e.target.style.color = "#FFC000")}
+                        onMouseOut={(e) => (e.target.style.color = "white")}
+                      />
+                    </a>
                   </div>
                   <div className="footer_fb_icon">
-                    <FaLinkedinIn
-                      style={iconStyles}
-                      onMouseOver={(e) => (e.target.style.color = "#FFC000")}
-                      onMouseOut={(e) => (e.target.style.color = "white")}
-                    />
+                    <a
+                      href="https://www.linkedin.com/company/aurelian-origins/"
+                      target="_blank"
+                    >
+                      {" "}
+                      <FaLinkedinIn
+                        style={iconStyles}
+                        onMouseOver={(e) => (e.target.style.color = "#FFC000")}
+                        onMouseOut={(e) => (e.target.style.color = "white")}
+                      />
+                    </a>
                   </div>
                 </div>
               </div>
@@ -169,12 +181,26 @@ function Footer() {
                 </div>
                 <div>
                   <ul className="footer_second_col_li">
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Call of liberty</li>
-                    <li>Careers</li>
-                    <li>Blog</li>
-                    <li>Contact Us</li>
+                    <Link to="/">
+                      {" "}
+                      <li>Home</li>
+                    </Link>
+                    <Link to="/about">
+                      <li>About Us</li>
+                    </Link>
+                    <Link to="/call">
+                      <li>Call of liberty</li>
+                    </Link>
+                    <Link to="/career">
+                      {" "}
+                      <li>Careers</li>
+                    </Link>
+                    <Link to="/blog">
+                      <li>Blog</li>
+                    </Link>
+                    <Link to="contact">
+                      <li>Contact Us</li>
+                    </Link>
                   </ul>
                 </div>
               </div>

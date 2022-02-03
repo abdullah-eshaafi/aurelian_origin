@@ -1,9 +1,24 @@
+a {
+  text-decoration: none;
+  color: white;
+}
 .footer_main_wrapper {
   width: 100%;
   /* height: 547px; */
   background: #000000;
 }
+.footer_second_col_li > a {
+  text-decoration: none;
+  color: white;
+}
 
+.footer_second_col_li > a:hover {
+  text-decoration: none;
+  color: white;
+}
+.footer_second_col_li > a > li {
+  list-style-type: none;
+}
 .footer_heading {
   margin-top: 97px;
   margin-bottom: 16px;
