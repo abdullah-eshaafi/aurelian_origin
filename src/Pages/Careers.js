@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TheNavigantionBar from "../Components/Navbar/TheNavigantionBar.js";
 import "./Career.css";
-import abput_hero_bg from "../Resources/Images/about/abput_hero_bg.png";
+
 import axios from "axios";
 
 import career_hero_img from "../Resources/Images/career/career_hero_img.png";
@@ -739,8 +739,8 @@ function Careers() {
                       );
                     })}
                   </select>
-                  <p className={applyClass}>{error_apply}</p>
                 </div>
+
                 <div className="col-lg-5 col-12 career_jojn_form">
                   <input
                     type="text"
@@ -756,6 +756,9 @@ function Careers() {
                   ></input>
                 </div>
               </div>
+              <div className="col-lg-3 text-center col-12 erropr_mag">
+                <p className={applyClass}>{error_apply}</p>
+              </div>
               <div className="col-lg-12 col-12 d-flex justify-content-center px-0">
                 <div className="col-lg-11 col-12 career_jojn_form_ d-flex justify-content-center careers_upload_file">
                   <div className="d-flex justify-content-center align-items-center content_main_last_div">
@@ -767,7 +770,6 @@ function Careers() {
                       onChange={(e) => handleAttachment(e.target.files)}
                       onBlur={handlefileAttachment}
                     ></input>
-                    <p className={fileClass}>{error_file}</p>
                     <div>
                       {" "}
                       <h1 className="d-flex">
@@ -777,6 +779,10 @@ function Careers() {
                   </div>
                 </div>
               </div>
+              <div className="col-lg-3 text-center col-12 erropr_mag_">
+                <p className={fileClass}>{error_file}</p>
+              </div>
+
               <div className="col-lg-12 col-12 d-flex justify-content-center career_last_inpurt___">
                 <div className="col-lg-11 col-12 career_jojn_form__ d-flex justify-content-center">
                   <input
@@ -805,7 +811,7 @@ function Careers() {
           </Row>
         </Container>
       </div>
-      <div style={{ marginTop: "83px  " }}>
+      <div style={{ marginTop: "83px" }}>
         <Footer></Footer>
       </div>
     </Container>
