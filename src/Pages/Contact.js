@@ -218,7 +218,7 @@ function Contact() {
         <Container fluid className="about_section_hero_main_wrapper">
           <Container>
             <Row>
-              <Col className="d-flex" lg={6}>
+              <Col className="d-flex justify-content-center" lg={6}>
                 <div className="about_section_hero_section">
                   <h1>Contact Us</h1>
                 </div>

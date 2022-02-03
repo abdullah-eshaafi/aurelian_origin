@@ -6,6 +6,7 @@ import "./HomePage.css";
 import HomePage_Who_text from "../Resources/Images/HomePage/HomePage_Who_text.png";
 import Footer from "../Components/Footer/Footer";
 
+import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 
 import CountUp from "react-countup";
@@ -81,7 +82,7 @@ function HomePage() {
                     <Col lg={8}>
                       <Fade duration={1000} top>
                         <div className="HomePage_Who_text_second">
-                          <h2>Who we are</h2>
+                          <h2>What we do</h2>
                         </div>
                       </Fade>
                     </Col>
@@ -218,9 +219,11 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="join_us_common apply_now_button">
-                  <button id="apply_now_btn">
-                    <button id="apply_second_btn">APPLY NOW</button>
-                  </button>
+                  <Link to="/career">
+                    <button id="apply_now_btn">
+                      <button id="apply_second_btn">APPLY NOW</button>
+                    </button>
+                  </Link>
                 </div>
               </Col>
             </Row>

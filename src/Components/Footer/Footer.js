@@ -78,7 +78,9 @@ function Footer() {
           }, 2000);
         }
       })
-      .catch((e) => {});
+      .catch((e) => {
+        setSpiner("");
+      });
   };
 
   const handleEmailChange = (e) => {

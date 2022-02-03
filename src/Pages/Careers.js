@@ -11,6 +11,11 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 import Waqar from "../Resources/Images/career/waqar.svg";
+import najam from "../Resources/Images/career/najam.png";
+
+import waseeq from "../Resources/Images/career/waseeq.png";
+
+import mohsin from "../Resources/Images/career/mohsin.png";
 
 import kh from "../Resources/Images/career/kh.svg";
 
@@ -40,23 +45,13 @@ function Careers() {
 
   const careerList = [
     "",
-    "IOS Developer",
-    "Android Developer",
-    "Backend Developer",
-    "Frontend Developer",
-    "DevOps Engr",
-    "UI/UX Designer",
-    "SEO Expert",
-    "Data Analyst",
-    "Computer Graphic Artist",
-    "Unity Developer",
+    "Junior Unity Developer",
+    "Post Production CG Artist",
+    "Concept Artist",
     "3D Modeler",
-    "2D Animator",
-    "Game Designer/Planner",
-    "Software Quality Assurance",
-    "Accounts Executive",
-    "HR Executive",
-    "Computer Vision",
+    "3D Animator",
+    "Art Director",
+    "HR Officer",
   ];
 
   const [spiner, setSpiner] = useState("");
@@ -345,22 +340,22 @@ function Careers() {
       post: "Game Developer",
     },
     {
-      text: "I would describe our team as diverse and driven. Everybody is unique and talented . What makes working fun at Aurelian Origins is the broad vision that makes us virtually staying ahead of the crowd.",
-      img: Waqar,
-      name: "Waqar Javed",
-      post: "Game Developer",
+      text: "Teamwork, transparency and respect are the values that Aurelian Origins put into an action every single day. The company promotes professional staff to ensure diversification and innovation to bring the best out of the team.    ",
+      img: najam,
+      name: "NAJAM SAQIB",
+      post: "Team Lead",
     },
     {
-      text: "I would describe our team as diverse and driven. Everybody is unique and talented . What makes working fun at Aurelian Origins is the broad vision that makes us virtually staying ahead of the crowd.",
-      img: Waqar,
-      name: "Waqar Javed",
-      post: "Game Developer",
+      text: "I worked here on some good titles for more than 2 years and experienced a substantial growth in my learning and skills. I would say this is one of the best place where you get various opportunities to try new things in your domain.",
+      img: waseeq,
+      name: "WASEEQ ABAID BUTT",
+      post: "Senior Unity Developer",
     },
     {
-      text: "I would describe our team as diverse and driven. Everybody is unique and talented . What makes working fun at Aurelian Origins is the broad vision that makes us virtually staying ahead of the crowd.",
-      img: Waqar,
-      name: "Waqar Javed",
-      post: "Game Developer",
+      text: "Aurelian Origins on their own ground provide many opportunities to grab. There is a good work-life balance over here. It is great to work at Aurelian Origins.",
+      img: mohsin,
+      name: "Mohsin Zahoor",
+      post: " 3D Character  Artist",
     },
   ];
   return (
@@ -370,7 +365,7 @@ function Careers() {
         <Container fluid className="about_section_hero_main_wrapper">
           <Container>
             <Row>
-              <Col className="d-flex" lg={6}>
+              <Col className="d-flex justify-content-center" lg={6}>
                 <div className="about_section_hero_section">
                   <h1>Careers</h1>
                 </div>

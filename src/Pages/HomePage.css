@@ -255,3 +255,14 @@ transform: matrix(-1, 0, 0, 1, 0, 0); */
     object-fit: cover;
   }
 }
+
+@media screen and (min-width: 1920) {
+  #my_video {
+    padding-left: 70px;
+    transform: skewY(3.5deg);
+    width: 70vw;
+    height: 50vh;
+
+    object-fit: cover;
+  }
+}
