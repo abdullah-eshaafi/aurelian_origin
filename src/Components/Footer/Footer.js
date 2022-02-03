@@ -11,7 +11,98 @@ import footer_map from "../../Resources/Images/Footer/footer_map.png";
 
 import close from "../../Resources/Images/Footer/close.svg";
 
+import axios from "axios";
+
 function Footer() {
+  const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; // Regex for Email.
+  const [email, setEmail] = useState("");
+  const [spiner, setSpiner] = useState("");
+  const [emailClass, setEmailClass] = useState("");
+
+  const [error_email, setError_email] = useState("");
+  const [success_message, setSuccess_Message] = useState("");
+
+  const handleSendMessage = () => {
+    // console.log("working");
+    if (email === "") {
+      setEmailClass("error-field3");
+      setError_email("Please enter a valid email");
+
+      if (email !== "") {
+        if (email.match(regexEmail)) {
+          setEmailClass("");
+          setError_email("");
+        }
+      }
+    } else {
+      if (email.match(regexEmail)) {
+        // console.log("email valid");
+        setEmailClass("");
+        setError_email("");
+
+        // console.log(Name + " " + number + " " + email + " " + text);
+        Handle_Call_API();
+      } else {
+        // console.log("email invalid");
+        setError_email("Please enter a valid email");
+        setEmailClass("error-field3");
+      }
+    }
+  };
+
+  const Handle_Call_API = (e) => {
+    let data = {
+      email: email,
+    };
+    setSpiner("spinner-border");
+
+    // console.log(
+    //   data.full_name + " " + data.phone + " " + data.email + " " + data.message
+    // );
+    // console.log(data.full_name);
+
+    axios
+      .post("http://192.168.1.24:8000/api/subscribeChannel", data)
+      .then((r) => {
+        console.log(r.status);
+        // setPhoneNumber("");
+        if (r.status === 200) {
+          // console.log("dfgrf");
+          // setPhoneNumber("");
+          setSuccess_Message("Sent successfully");
+          setSpiner("");
+          setTimeout((e) => {
+            setSuccess_Message("");
+            setEmail("");
+            setSpiner("");
+          }, 2000);
+        }
+      })
+      .catch((e) => {});
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+    setEmailClass("");
+    setError_email("");
+    // console.log(email)
+  };
+
+  const handleEmailValidate = (e) => {
+    if (email === "") {
+      setError_email("");
+      setEmailClass("");
+    }
+    if (email !== "") {
+      if (email.match(regexEmail)) {
+        setError_email("");
+      } else {
+        setEmailClass("error-field3");
+        setError_email("Please enter a valid email");
+      }
+    }
+  };
+
   const [lgShow, setLgShow] = useState(false);
 
   const values = [true];
@@ -384,9 +475,28 @@ function Footer() {
                     </div>
                     <div>
                       <div className="m_subscribe_para_input d-flex">
-                        <input type="text" placeholder="your email" />
-                        <button>SUBSCRIBE</button>
+                        <input
+                          type="text"
+                          name="input-text"
+                          id="input-text"
+                          required
+                          spellCheck="false"
+                          className={emailClass}
+                          value={email}
+                          onChange={handleEmailChange}
+                          onBlur={handleEmailValidate}
+                          autoComplete="off"
+                          placeholder="your email"
+                        />
+
+                        <button onClick={handleSendMessage} type="button">
+                          {" "}
+                          SUBSCRIBE
+                        </button>
                       </div>
+                      <div className={spiner}></div>
+                      <p className={emailClass}>{error_email}</p>
+                      <p className={"m-0"}>{success_message}</p>
                     </div>
                   </div>
                 </div>

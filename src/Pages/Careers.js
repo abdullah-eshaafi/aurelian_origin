@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TheNavigantionBar from "../Components/Navbar/TheNavigantionBar.js";
 import "./Career.css";
-import abput_hero_bg from "../Resources/Images/about/abput_hero_bg.png";
 
 import career_hero_img from "../Resources/Images/career/career_hero_img.png";
 
@@ -403,7 +402,7 @@ function Careers() {
                   </select>
                 </div>
                 <div className="col-lg-5 col-12 career_jojn_form">
-                  <input type="text" placeholder="Email"></input>
+                  <input type="text" placeholder="City"></input>
                 </div>
               </div>
               <div className="col-lg-12 col-12 d-flex justify-content-center px-0">
