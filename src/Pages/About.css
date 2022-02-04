@@ -44,8 +44,8 @@
 }
 
 .about_us_second > img {
-  /* width: 100%;
-  height: 100%; */
+  width: 100%;
+  height: 100%;
 }
 .about_story_far {
   margin-bottom: 42px;
@@ -385,7 +385,7 @@
   .about_hero_img_sec {
     position: absolute;
     top: 20px;
-    left: 3%;
+    left: 0%;
   }
   .abput_hero_bg {
     position: absolute;
@@ -457,7 +457,7 @@
   .about_hero_img_sec {
     position: absolute;
     top: 10px;
-    left: 15%;
+    left: 0%;
   }
   .abput_hero_bg {
     position: absolute;

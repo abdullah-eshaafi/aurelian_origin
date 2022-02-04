@@ -225,4 +225,7 @@ a {
   .footer_bootom > li {
     margin-bottom: 16px;
   }
+  .caraousel_image_text {
+    margin-left: 50px;
+  }
 }

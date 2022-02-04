@@ -747,9 +747,10 @@ function Careers() {
                   ></input>
                 </div>
               </div>
-              <div className="col-lg-3 text-center col-12 erropr_mag">
+              <div className="col-lg-3 text-md-center text-start col-12 erropr_mag">
                 <p className={applyClass}>{error_apply}</p>
               </div>
+
               <div className="col-lg-12 col-12 d-flex justify-content-center px-0">
                 <div className="col-lg-11 col-12 career_jojn_form_ d-flex justify-content-center careers_upload_file">
                   <div className="d-flex justify-content-center align-items-center content_main_last_div">
@@ -773,7 +774,7 @@ function Careers() {
               <div className="col-lg-3 text-center col-12 file_mag_">
                 <p className={fileClass}>{attachments && attachments.name}</p>
               </div>
-              <div className="col-lg-3 text-center col-12 erropr_mag_">
+              <div className="col-lg-3 text-md-center text-start col-12 erropr_mag_">
                 <p className={fileClass}>{error_file}</p>
               </div>
 

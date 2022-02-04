@@ -618,9 +618,36 @@
   .career_jojn_form {
     margin-left: 0px;
   }
+
+  .career_our_culture_heading > h6 {
+    font-family: Ghost Clan;
+    font-style: normal;
+    font-weight: normal !important;
+    font-size: 42px !important;
+    line-height: 42px !important;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #000000;
+    margin-bottom: 0 !important;
+  }
 }
 
 @media only screen and (max-width: 470px) and (min-width: 270px) {
+  .career_our_culture_heading > h6 {
+    font-family: Ghost Clan;
+    font-style: normal;
+    font-weight: normal !important;
+    font-size: 42px !important;
+    line-height: 42px !important;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #000000;
+    margin-bottom: 0 !important;
+  }
   .reward_wrapper {
     margin-bottom: 24px;
   }
@@ -660,5 +687,16 @@
   }
   .career_jojn_form {
     margin-left: 0px;
+  }
+
+  .erropr_mag {
+    margin-left: 0px;
+  }
+
+  .erropr_mag_ {
+    margin-left: 0px;
+  }
+  .career_jojn_form {
+    margin-bottom: 16px;
   }
 }

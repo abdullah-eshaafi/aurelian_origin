@@ -254,6 +254,9 @@ transform: matrix(-1, 0, 0, 1, 0, 0); */
 
     object-fit: cover;
   }
+  .counting_numbers_container {
+    padding-left: 25%;
+  }
 }
 
 @media screen and (min-width: 1920) {
