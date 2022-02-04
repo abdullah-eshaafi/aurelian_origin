@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import TheNavigationBar from "../Components/Navbar/TheNavigantionBar";
 import Slider from "../Components/Slider/TheSlider";
 import "./HomePage.css";
-import HomePage_Who_text from "../Resources/Images/HomePage/HomePage_Who_text.png";
+
 import Footer from "../Components/Footer/Footer";
 
 import { Link } from "react-router-dom";
@@ -115,10 +115,10 @@ function HomePage() {
           <Container>
             <Row>
               <Col lg={12}>
-                <div className="col-12 d-flex counting_numbers_container flex-lg-row flex-column align-items-sm-center align-items-start">
+                <div className="col-12 d-flex counting_numbers_container flex-lg-row flex-column align-items-sm-center align-items-center">
                   <div className="col-4 d-flex justify-content-center">
                     <div className="col-12 text-center">
-                      <div className="Ghost_normal_80">
+                      <div className="Ghost_normal_80 margin_left_number">
                         <h2>
                           <VisibilitySensor
                             partialVisibility
@@ -138,14 +138,14 @@ function HomePage() {
                           </VisibilitySensor>
                         </h2>
                       </div>
-                      <div>
+                      <div className="text-center">
                         <h6>Total Downloads</h6>
                       </div>
                     </div>
                   </div>
                   <div className="col-4">
                     <div className="col-12 text-center">
-                      <div className="Ghost_normal_80">
+                      <div className="Ghost_normal_80 margin_left_number">
                         <h2>
                           <VisibilitySensor
                             partialVisibility
@@ -172,7 +172,7 @@ function HomePage() {
                   </div>
                   <div className="col-4">
                     <div className="col-12 text-center">
-                      <div className="Ghost_normal_80">
+                      <div className="Ghost_normal_80 margin_left_number">
                         <h2>
                           <VisibilitySensor
                             partialVisibility

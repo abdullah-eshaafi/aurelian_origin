@@ -224,9 +224,6 @@ function Contact() {
                 </div>
               </Col>
               <Col className="about_hero_img_section px-0" lg={6}>
-                {/* <div className="abput_hero_bg">
-                  <img src={abput_hero_bg} alt="..."></img>
-                </div> */}
                 <div
                   className="about_hero_img_sec"
                   style={{ marginLeft: "50px" }}

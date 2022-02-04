@@ -254,8 +254,18 @@ transform: matrix(-1, 0, 0, 1, 0, 0); */
 
     object-fit: cover;
   }
-  .counting_numbers_container {
-    padding-left: 25%;
+
+  .Join_Us {
+    position: relative;
+    padding-top: 228px;
+    padding-bottom: 228px;
+    background: #ffc000;
+    transform: skewY(-3.5deg);
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .margin_left_number {
+    margin-left: -10%;
   }
 }
 
