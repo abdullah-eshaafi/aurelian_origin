@@ -348,7 +348,9 @@ function Contact() {
               </div>
             </div>
             <div>
-              <img src={conatct_map} alt="..." />
+              <a href="https://g.page/aureliansolutions?share" target="_blank">
+                <img src={conatct_map} alt="..." />
+              </a>
             </div>
           </Col>
         </Row>
