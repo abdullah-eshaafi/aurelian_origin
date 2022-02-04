@@ -43,6 +43,7 @@
   border: 1px solid #cccccc;
   box-sizing: border-box;
   border-radius: 4px;
+  padding-left: 16px;
 }
 .contact_section_input > textarea {
   width: 100%;
@@ -51,6 +52,8 @@
   border: 1px solid #cccccc;
   box-sizing: border-box;
   border-radius: 4px;
+  padding-left: 16px;
+  padding-top: 12px;
 }
 .contact_section_input {
   margin-top: 32px;
@@ -67,8 +70,8 @@
   letter-spacing: 0.5px;
 
   color: #8e8e8e;
-  padding-left: 12px;
-  padding-top: 12px;
+
+  /* padding-top: 12px; */
 }
 
 .contact_section_input > button {

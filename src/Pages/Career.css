@@ -75,6 +75,10 @@
   color: #ffc000;
 }
 
+.selction_options_width {
+  width: 50%;
+}
+
 .careers_items_list_heading > h3 {
   font-family: Myriad Pro;
   font-style: normal;

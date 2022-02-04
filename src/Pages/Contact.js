@@ -202,7 +202,7 @@ function Contact() {
       if (text_length <= 7) {
         // console.log("checkmate")
         setTextClass("error-field3");
-        setError_text("Minimum length of 7 Characters required");
+        setError_text("Minimum length of 7 characters required");
       } else {
         setError_text("");
         setTextClass("");

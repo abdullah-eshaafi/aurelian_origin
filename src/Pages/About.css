@@ -43,6 +43,11 @@
   margin-top: 0px;
 }
 
+.about_us_second_ > img {
+  height: 70%;
+  width: 70%;
+}
+
 .about_us_second > img {
   width: 100%;
   height: 100%;

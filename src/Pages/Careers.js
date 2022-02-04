@@ -230,7 +230,7 @@ function Careers() {
       setapplyClass("error-field3");
       setError_apply("Please select a field");
       setfileClass("error-field3");
-      setError_file("Please upload your cv");
+      setError_file("Please upload your resume");
       setError_lname("Please enter a valid name");
       setLNameClass("error-field3");
       setPhoneClass("error-field3");
@@ -536,72 +536,64 @@ function Careers() {
           <Row className="employee_benefits_wrapper">
             <Col lg={12} md={12} className="d-flex justify-content-center">
               <div className="col-lg-12  d-lg-flex justify-content-between">
-                <Fade duration={2000} delay={200}>
-                  <div className="col-lg-4  text-center reward_wrapper">
-                    <div>
-                      <img src={Heart_icon} alt="..."></img>
-                    </div>
-                    <div className="craeer_employee_wellBeing">
-                      <p>Employee Wellbeing</p>
-                    </div>
+                <div className="col-lg-4  text-center reward_wrapper">
+                  <div>
+                    <img src={Heart_icon} alt="..."></img>
                   </div>
-                </Fade>
-                <Fade duration={2000} delay={400}>
-                  <div className="col-lg-4  text-center reward_wrapper">
-                    <div>
-                      <img src={attandance} alt="..."></img>
-                    </div>
-                    <div className="craeer_employee_wellBeing">
-                      <p>Attendance Rewards</p>
-                    </div>
+                  <div className="craeer_employee_wellBeing">
+                    <p>Employee Wellbeing</p>
                   </div>
-                </Fade>
-                <Fade duration={2000} delay={600}>
-                  <div className="col-lg-4 text-center reward_wrapper">
-                    <div>
-                      <img src={paid_leave} alt="..."></img>
-                    </div>
-                    <div className="craeer_employee_wellBeing">
-                      <p>Paid Leaves</p>
-                    </div>
+                </div>
+
+                <div className="col-lg-4  text-center reward_wrapper">
+                  <div>
+                    <img src={attandance} alt="..."></img>
                   </div>
-                </Fade>
+                  <div className="craeer_employee_wellBeing">
+                    <p>Attendance Rewards</p>
+                  </div>
+                </div>
+
+                <div className="col-lg-4 text-center reward_wrapper">
+                  <div>
+                    <img src={paid_leave} alt="..."></img>
+                  </div>
+                  <div className="craeer_employee_wellBeing">
+                    <p>Paid Leaves</p>
+                  </div>
+                </div>
               </div>
             </Col>
           </Row>
           <Row className="employee_career_well_beign_second">
             <Col lg={12} className="d-flex justify-content-center">
               <div className="col-lg-12 d-lg-flex justify-content-between">
-                <Fade duration={2000} delay={600}>
-                  <div className="col-lg-4 text-center reward_wrapper">
-                    <div>
-                      <img src={loyality} alt="..."></img>
-                    </div>
-                    <div className="craeer_employee_wellBeing">
-                      <p>Loyalty Rewards</p>
-                    </div>
+                <div className="col-lg-4 text-center reward_wrapper">
+                  <div>
+                    <img src={loyality} alt="..."></img>
                   </div>
-                </Fade>
-                <Fade duration={2000} delay={800}>
-                  <div className="col-lg-4 text-center reward_wrapper">
-                    <div>
-                      <img src={provident} alt="..."></img>
-                    </div>
-                    <div className="craeer_employee_wellBeing">
-                      <p>Provident Fund</p>
-                    </div>
+                  <div className="craeer_employee_wellBeing">
+                    <p>Loyalty Rewards</p>
                   </div>
-                </Fade>
-                <Fade duration={2000} delay={1000}>
-                  <div className="col-lg-4 text-center reward_wrapper">
-                    <div>
-                      <img src={paid} alt="..."></img>
-                    </div>
-                    <div className="craeer_employee_wellBeing">
-                      <p>Paid Overtime</p>
-                    </div>
+                </div>
+
+                <div className="col-lg-4 text-center reward_wrapper">
+                  <div>
+                    <img src={provident} alt="..."></img>
                   </div>
-                </Fade>
+                  <div className="craeer_employee_wellBeing">
+                    <p>Provident Fund</p>
+                  </div>
+                </div>
+
+                <div className="col-lg-4 text-center reward_wrapper">
+                  <div>
+                    <img src={paid} alt="..."></img>
+                  </div>
+                  <div className="craeer_employee_wellBeing">
+                    <p>Paid Overtime</p>
+                  </div>
+                </div>
               </div>
             </Col>
           </Row>
