@@ -178,3 +178,8 @@ button[disabled] {
   height: 20px !important;
   margin-right: 11px !important;
 }
+@media only screen and (max-width: 470px) and (min-width: 270px) {
+  .contact_get_in_touch {
+    margin-top: 24px;
+  }
+}

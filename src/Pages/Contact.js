@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TheNavigationBar from "../Components/Navbar/TheNavigantionBar";
 import "./Contact.css";
-import abput_hero_bg from "../Resources/Images/about/abput_hero_bg.png";
 
 import career_hero_img from "../Resources/Images/career/career_hero_img.png";
 
@@ -317,7 +316,10 @@ function Contact() {
               </div>
             </div>
           </Col>
-          <Col lg={6}>
+          <Col
+            lg={6}
+            className="order-first order-lg-last .contact_input___form"
+          >
             <div>
               <div className="conatct_details_heading">
                 <h4>our details</h4>

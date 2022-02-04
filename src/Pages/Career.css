@@ -578,6 +578,10 @@
 }
 
 @media only screen and (max-width: 576px) and (min-width: 470px) {
+  .career_items {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   .reward_wrapper {
     margin-bottom: 24px;
   }
@@ -632,9 +636,17 @@
     color: #000000;
     margin-bottom: 0 !important;
   }
+
+  .employee_benefits_wrapper {
+    margin-bottom: 0px;
+  }
 }
 
 @media only screen and (max-width: 470px) and (min-width: 270px) {
+  .career_items {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   .career_our_culture_heading > h6 {
     font-family: Ghost Clan;
     font-style: normal;
@@ -698,5 +710,9 @@
   }
   .career_jojn_form {
     margin-bottom: 16px;
+  }
+
+  .employee_benefits_wrapper {
+    margin-bottom: 0px;
   }
 }

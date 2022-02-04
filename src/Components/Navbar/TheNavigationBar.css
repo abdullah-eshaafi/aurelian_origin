@@ -36,4 +36,13 @@
     border: 0px solid red;
     border-radius: 10px;
   }
+
+  .navbar_link {
+    position: relative;
+    text-decoration: none;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+  }
 }

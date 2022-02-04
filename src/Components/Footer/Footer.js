@@ -253,7 +253,14 @@ function Footer() {
             </div>
             <div className="col-xl-4 col-12 d-flex justify-content-xl-start justify-content-center">
               <div className="footer_img  d-flex justify-content-center col-xl-11 ">
-                <img src={footer_map} alt="..." className="img-fluid" />
+                <a
+                  href="https://g.page/aureliansolutions?share"
+                  target="_blank"
+                  className="  d-flex justify-content-center "
+                >
+                  {" "}
+                  <img src={footer_map} alt="..." className="img-fluid" />
+                </a>
               </div>
             </div>
           </Col>

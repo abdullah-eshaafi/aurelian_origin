@@ -297,10 +297,6 @@ function Careers() {
           setSpiner("");
         });
     }
-
-    // console.log(apply_for)
-    // console.log(attachments)
-    // e.preventDefault();
   };
 
   const responsive = {
@@ -626,16 +622,18 @@ function Careers() {
                   <div className="career_position_para text-center col-lg-12">
                     <p>{data.descL}</p>
                   </div>
-                  <div className="career_position_btn">
-                    <button>{data.btn}</button>
-                  </div>
+                  <a href="#title">
+                    <div className="career_position_btn">
+                      <button>{data.btn}</button>
+                    </div>{" "}
+                  </a>
                 </div>
               </Col>
             ))}
           </Row>
           <Row>
             <Col lg={12} className="text-center">
-              <div className="career_join_form text-center">
+              <div className="career_join_form text-center" id="title">
                 <h3>Join our team</h3>
               </div>
             </Col>
