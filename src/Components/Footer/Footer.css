@@ -32,6 +32,10 @@ a {
 .footer_fb_icon {
   cursor: pointer;
 }
+
+.caraousel_image_text {
+  margin-left: 90px;
+}
 .footer_second_col_list {
   margin-top: 97px;
   margin-bottom: 24px;

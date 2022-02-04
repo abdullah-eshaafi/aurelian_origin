@@ -15,7 +15,7 @@ import najam from "../Resources/Images/career/najam.png";
 
 import waseeq from "../Resources/Images/career/waseeq.png";
 
-import mohsin from "../Resources/Images/career/mohsin.png";
+import mohsin from "../Resources/Images/career/mohsin.svg";
 
 import kh from "../Resources/Images/career/kh.svg";
 
@@ -44,7 +44,7 @@ function Careers() {
   const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
   const careerList = [
-    "",
+    "Applying For",
     "Junior Unity Developer",
     "Post Production CG Artist",
     "Concept Artist",
@@ -89,16 +89,7 @@ function Careers() {
   const [error_portfolio, setError_portfolio] = useState("");
   const [portfolioClass, setportfolioClass] = useState("");
 
-  console.log(
-    full_name,
-    last_name,
-    PhoneNumber,
-    email,
-    apply_for,
-    city,
-    attachments,
-    portfolio
-  );
+  console.log(attachments.name);
 
   const handleNameChange = (e) => {
     let element = e.target;
@@ -285,7 +276,7 @@ function Careers() {
       fData.append("contact_no", PhoneNumber);
 
       axios
-        .post("http://192.168.1.24:8000/api/applyForCareer", fData)
+        .post("https://api.aurelianorigins.com/api/applyForCareer", fData)
         .then((r) => {
           console.log(r);
           if (r.status === 200) {
@@ -352,7 +343,7 @@ function Careers() {
       post: "Senior Unity Developer",
     },
     {
-      text: "Aurelian Origins on their own ground provide many opportunities to grab. There is a good work-life balance over here. It is great to work at Aurelian Origins.",
+      text: "Aurelian Origins on their own ground provide many opportunities to grab. There is a good work-life balance over here. It is great to work at Aurelian Origins.Really enjoyed working with Aurelian Origins",
       img: mohsin,
       name: "Mohsin Zahoor",
       post: " 3D Character  Artist",
@@ -403,7 +394,7 @@ function Careers() {
                             <p>{data.text}</p>
                           </div>
                         </div>
-                        <div className="d-flex align-items-center justify-content-center col-lg-7 col-md-7">
+                        <div className="d-flex align-items-center caraousel_image_text col-lg-8 col-md-8">
                           <div className="careers_items_list_img">
                             <img src={data.img} alt="..." />
                           </div>
@@ -778,6 +769,9 @@ function Careers() {
                     </div>
                   </div>
                 </div>
+              </div>
+              <div className="col-lg-3 text-center col-12 file_mag_">
+                <p className={fileClass}>{attachments && attachments.name}</p>
               </div>
               <div className="col-lg-3 text-center col-12 erropr_mag_">
                 <p className={fileClass}>{error_file}</p>

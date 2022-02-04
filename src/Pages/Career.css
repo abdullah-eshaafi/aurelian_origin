@@ -378,7 +378,7 @@
   padding-left: 12px;
 }
 .select::after {
-  content: "\25BC";
+  content: url("../Resources/Images/Slider/arrow.svg");
   position: absolute;
   top: 0;
   right: 0;
@@ -483,7 +483,21 @@
 .erropr_mag_ {
   margin-left: 16px;
 }
+.file_mag_ > p {
+  margin-left: -20px;
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
 
+  letter-spacing: 0.5px;
+
+  /* S Orange */
+
+  color: #8e8e8e;
+}
 @media only screen and (max-width: 992px) and (min-width: 768px) {
   .reward_wrapper {
     margin-bottom: 24px;

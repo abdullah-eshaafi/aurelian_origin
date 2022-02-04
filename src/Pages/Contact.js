@@ -101,7 +101,7 @@ function Contact() {
     // console.log(data.full_name);
 
     axios
-      .post("http://192.168.1.24:8000/api/contactUs", data)
+      .post("https://api.aurelianorigins.com/api/contactUs", data)
       .then((r) => {
         console.log(r.status);
         // setPhoneNumber("");

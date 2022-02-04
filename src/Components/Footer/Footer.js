@@ -62,7 +62,7 @@ function Footer() {
     // console.log(data.full_name);
 
     axios
-      .post("http://192.168.1.24:8000/api/subscribeChannel", data)
+      .post("https://api.aurelianorigins.com/api/subscribeChannel", data)
       .then((r) => {
         console.log(r.status);
         // setPhoneNumber("");
