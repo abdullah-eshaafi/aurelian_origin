@@ -5,23 +5,14 @@ import "./Career.css";
 
 import axios from "axios";
 
-import career_hero_img from "../Resources/Images/career/career_hero_img.png";
-
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 import Waqar from "../Resources/Images/career/waqar.svg";
-import najam from "../Resources/Images/career/najam.png";
-
-import waseeq from "../Resources/Images/career/waseeq.png";
 
 import mohsin from "../Resources/Images/career/mohsin.svg";
 
 import kh from "../Resources/Images/career/kh.svg";
-
-import career_culture_first from "../Resources/Images/career/career_culture_first.png";
-
-import career_culture_second from "../Resources/Images/career/career_culture_second.png";
 
 import Heart_icon from "../Resources/Images/career/Heart_icon.svg";
 
@@ -100,7 +91,7 @@ function Careers() {
 
     // console.log(Name)
   };
-  //===================================== handle name Validate function  ===============================
+
   const handleNameValidate = (e) => {
     if (full_name === "") {
       setNameClass("");
@@ -321,28 +312,29 @@ function Careers() {
 
   const items = [
     {
-      text: "I would describe our team as diverse and driven. Everybody is unique and talented . What makes working fun at Aurelian Origins is the broad vision that makes us virtually staying ahead of the crowd.",
+      text: "Teamwork, transparency and respect are the values that Aurelian Origins put into an action every single day. The company promotes professional staff to ensure diversification and innovation to bring the best out of the team.    ",
+      img: "https://aurilian.s3.us-east-2.amazonaws.com/compresspng+(2)/najam-min.png",
+      name: "Najam Saqib",
+      post: "Team Lead",
+    },
+    {
+      text: "I would describe our team as diverse and driven. Everybody is unique and talented and working with full efforts. What makes working fun at Aurelian Origins is the broad vision that makes us virtually staying ahead of the crowd.",
       img: Waqar,
       name: "Waqar Javed",
       post: "Game Developer",
     },
-    {
-      text: "Teamwork, transparency and respect are the values that Aurelian Origins put into an action every single day. The company promotes professional staff to ensure diversification and innovation to bring the best out of the team.    ",
-      img: najam,
-      name: "NAJAM SAQIB",
-      post: "Team Lead",
-    },
+
     {
       text: "I worked here on some good titles for more than 2 years and experienced a substantial growth in my learning and skills. I would say this is one of the best place where you get various opportunities to try new things in your domain.",
-      img: waseeq,
-      name: "WASEEQ ABAID BUTT",
-      post: "Senior Unity Developer",
+      img: "https://aurilian.s3.us-east-2.amazonaws.com/compresspng+(2)/waseeq-min.png",
+      name: "Waseeq Butt",
+      post: "Sr Unity Developer",
     },
     {
-      text: "Aurelian Origins on their own ground provide many opportunities to grab. There is a good work-life balance over here. It is great to work at Aurelian Origins.Really enjoyed working with Aurelian Origins",
+      text: "Aurelian Origins on their own ground provide many opportunities to grab. There is a good work-life balance over here. It is great to work at Aurelian Origins.Really enjoyed working with Aurelian Origins in a calm environment",
       img: mohsin,
       name: "Mohsin Zahoor",
-      post: " 3D Character  Artist",
+      post: "3D Character Artist",
     },
   ];
   return (
@@ -352,7 +344,7 @@ function Careers() {
         <Container fluid className="about_section_hero_main_wrapper">
           <Container>
             <Row>
-              <Col className="d-flex justify-content-center" lg={6}>
+              <Col className="d-flex " lg={6}>
                 <div className="about_section_hero_section">
                   <h1>Careers</h1>
                 </div>
@@ -365,7 +357,10 @@ function Careers() {
                   className="about_hero_img_sec"
                   style={{ marginLeft: "50px" }}
                 >
-                  <img src={career_hero_img} alt="..."></img>
+                  <img
+                    src="https://aurilian.s3.us-east-2.amazonaws.com/compresspng+(2)/career_hero_img-min.png"
+                    alt="..."
+                  ></img>
                 </div>
               </Col>
             </Row>
@@ -480,12 +475,15 @@ function Careers() {
                       personal and professional growth.
                     </p>
                   </div>
-                </div>{" "}
+                </div>
               </Fade>
             </Col>
             <Col lg={6}>
               <div className="career_culture_img">
-                <img src={career_culture_first} alt="...." />
+                <img
+                  src="https://aurilian.s3.us-east-2.amazonaws.com/compresspng+(2)/career_culture_first-min.png"
+                  alt="...."
+                />
               </div>
             </Col>
           </Row>
@@ -493,7 +491,10 @@ function Careers() {
           <Row className="career_culture_wrapper">
             <Col lg={6} className="order-last order-lg-first">
               <div className="career_culture_img">
-                <img src={career_culture_second} alt="...." />
+                <img
+                  src="https://aurilian.s3.us-east-2.amazonaws.com/compresspng+(2)/career_culture_second-min.png"
+                  alt="...."
+                />
               </div>
             </Col>
             <Col

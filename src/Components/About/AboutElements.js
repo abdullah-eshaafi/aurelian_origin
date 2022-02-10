@@ -13,7 +13,7 @@ function AboutElements({ title, text, img, orderfirst, orderLast, dis }) {
             <div className="about_us_elements_haeding">
               <h4>{title}</h4>
             </div>
-            <div className="about_us_elements_para col-xl-12 px-0">
+            <div className="about_us_elements_para col-xl-11 px-0">
               <p>{text}</p>
             </div>
           </div>

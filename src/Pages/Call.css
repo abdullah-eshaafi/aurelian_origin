@@ -1,5 +1,5 @@
 .call_background_img {
-  background-image: url("../Resources/Images/Blog/call_bg.png");
+  background-image: url("https://aurilian.s3.us-east-2.amazonaws.com/compresspng+(1)/call_bg-min.png");
   background-color: #cccccc; /* Used if the image is unavailable */
   height: calc(100vh - 82px); /* You must set a specified height */
   background-position: center; /* Center the image */

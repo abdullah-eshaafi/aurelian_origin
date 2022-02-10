@@ -4,15 +4,6 @@ import { Container, Row, Col } from "react-bootstrap";
 
 //Image in the slider
 
-import slider1 from "../../Resources/Images/Slider/slider1.jpg";
-import slider2 from "../../Resources/Images/Slider/slider2.jpg";
-import slider3 from "../../Resources/Images/Slider/slider3.jpg";
-
-import slider4 from "../../Resources/Images/Slider/slider4.jpg";
-import slider5 from "../../Resources/Images/Slider/slider5.jpg";
-
-import slider6 from "../../Resources/Images/Slider/slider6.jpg";
-import slider7 from "../../Resources/Images/Slider/slider7.jpg";
 
 import Left_arrow from "../../Resources/Images/Slider/left_arrow.svg";
 import Right_arrow from "../../Resources/Images/Slider/Right_arrow.svg";
@@ -26,31 +17,31 @@ function TheSlider() {
   const slides = [
     {
       id: 1,
-      link: slider1,
+      link: "https://aurilian.s3.us-east-2.amazonaws.com/Slider/slider1.jpg",
     },
     {
       id: 2,
-      link: slider4,
+      link: "https://aurilian.s3.us-east-2.amazonaws.com/Slider/slider4.jpg",
     },
     {
       id: 3,
-      link: slider3,
+      link: "https://aurilian.s3.us-east-2.amazonaws.com/Slider/slider3.jpg",
     },
     {
       id: 4,
-      link: slider7,
+      link: "https://aurilian.s3.us-east-2.amazonaws.com/Slider/slider7.jpg",
     },
     {
       id: 5,
-      link: slider5,
+      link: "https://aurilian.s3.us-east-2.amazonaws.com/Slider/slider5.jpg",
     },
     {
       id: 6,
-      link: slider2,
+      link: "https://aurilian.s3.us-east-2.amazonaws.com/Slider/slider2.jpg",
     },
     {
       id: 7,
-      link: slider6,
+      link: "https://aurilian.s3.us-east-2.amazonaws.com/Slider/slider6.jpg",
     },
   ];
   const slideNext = (e) => {

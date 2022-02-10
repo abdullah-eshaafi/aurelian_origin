@@ -55,7 +55,7 @@
   object-fit: cover;
 }
 .homePage_bg_pic {
-  background-image: url("../Resources/Images//HomePage/img.png");
+  background-image: url("https://aurilian.s3.us-east-2.amazonaws.com/compresspng+(5)/img-min.png");
   /* background-color: black; */
   height: 800px;
   background-attachment: fixed;
@@ -128,7 +128,7 @@
 .cod_bg {
   width: 100%;
   height: 577px;
-  background-image: url("../Resources/Images/HomePage/Footer.png");
+  background-image: url("https://aurilian.s3.us-east-2.amazonaws.com/compresspng+(5)/Footer-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -196,7 +196,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0); */
     padding-bottom: 40px;
   }
   .padding_top_bottom {
-    padding-top: 16px;
+    padding-top: 40px;
     padding-bottom: 16px;
   }
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TheNavigationBar from "../Components/Navbar/TheNavigantionBar";
 import Slider from "../Components/Slider/TheSlider";
@@ -128,9 +128,9 @@ function HomePage() {
                               <div style={{ height: 100 }}>
                                 {isVisible ? (
                                   <CountUp
-                                    end={50}
+                                    end={500}
                                     duration={2.75}
-                                    suffix="k"
+                                    suffix="M"
                                   />
                                 ) : null}
                               </div>
@@ -155,7 +155,7 @@ function HomePage() {
                               <div style={{ height: 100 }}>
                                 {isVisible ? (
                                   <CountUp
-                                    end={50}
+                                    end={10}
                                     duration={2.75}
                                     suffix="+"
                                   />
@@ -182,7 +182,7 @@ function HomePage() {
                               <div style={{ height: 100 }}>
                                 {isVisible ? (
                                   <CountUp
-                                    end={50}
+                                    end={10}
                                     duration={2.75}
                                     suffix="M"
                                   />

@@ -254,12 +254,16 @@ function Footer() {
             <div className="col-xl-4 col-12 d-flex justify-content-xl-start justify-content-center">
               <div className="footer_img  d-flex justify-content-center col-xl-11 ">
                 <a
-                  href="https://g.page/aureliansolutions?share"
+                  href="https://www.google.com/maps/place/Aurelian+Origins/@31.469717,74.254971,17z/data=!4m5!3m4!1s0x391903fe67721537:0x9378b78353fb4dda!8m2!3d31.469717!4d74.254971"
                   target="_blank"
                   className="  d-flex justify-content-center "
                 >
                   {" "}
-                  <img src={footer_map} alt="..." className="img-fluid" />
+                  <img
+                    src="https://aurilian.s3.us-east-2.amazonaws.com/compresspng+(4)/footer_map-min-min.png"
+                    alt="..."
+                    className="img-fluid"
+                  />
                 </a>
               </div>
             </div>
@@ -284,7 +288,7 @@ function Footer() {
           </Col>
           <Col xl={5} md={12}>
             <div className="text-xl-end text-center footer_right_reserved">
-              <h4>2021 © Aurelian origins | All Rights Reserved</h4>
+              <h4>2022 © Aurelian origins | All Rights Reserved</h4>
             </div>
           </Col>
         </Row>

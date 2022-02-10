@@ -155,7 +155,7 @@ a {
 }
 
 .subscribe_modal_img {
-  background-image: url("../../Resources/Images/Footer/subscribe.png");
+  background-image: url("https://aurilian.s3.us-east-2.amazonaws.com/compresspng+(4)/subscribe-min-min.png");
   width: 100%;
   height: 422px;
   overflow-x: hidden;
@@ -227,5 +227,20 @@ a {
   }
   .caraousel_image_text {
     margin-left: 50px;
+  }
+  .footer_description {
+    margin-bottom: 16px;
+  }
+  .img-fluid {
+    width: 100%;
+  }
+  .img-fluid {
+    width: 100%;
+  }
+  ul {
+    padding-left: 0px !important;
+  }
+  .footer_img {
+    margin-bottom: 120px;
   }
 }

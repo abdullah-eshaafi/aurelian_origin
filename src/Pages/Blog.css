@@ -61,4 +61,8 @@
 
     color: #000000;
   }
+  .blog_main_para{
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }

@@ -5,22 +5,13 @@ import "./About.css";
 
 import abput_hero_bg from "../Resources/Images/about/abput_hero_bg.png";
 
-import about_us_first from "../Resources/Images/about/about_us_first.png";
-import about_us_second from "../Resources/Images/about/about_us_second.png";
 import about_us_three from "../Resources/Images/about/about_us_three.png";
-import about_us_four from "../Resources/Images/about/about_us_four.png";
 
 import AboutTextImgSec from "../Components/About/AboutTextImgSec";
 
-import about_respect from "../Resources/Images/about/about_respect.png";
-
 import AboutElements from "../Components/About/AboutElements";
 
-import about_creativity from "../Resources/Images/about/about_creativity.png";
-import about_passion from "../Resources/Images/about/about_passion.png";
-import about_integrity from "../Resources/Images/about/about_integrity.png";
-
-import Ceo_Ustad from "../Resources/Images/about/Ceo_Ustad.png";
+import ele_sec from "../Resources/Images/about/ele_sec.png";
 
 import Footer from "../Components/Footer/Footer";
 
@@ -57,7 +48,7 @@ function About() {
                 February 2021, its guiding purpose has been to develop
                 high-quality games with unique features that will bring fantasy
                 and reality in tune."
-          img={about_us_first}
+          img="https://aurilian.s3.us-east-2.amazonaws.com/compresspng/about_us_first-min.png"
           orderfirst={"order-first"}
           orderLast={"order-last"}
           content="start"
@@ -73,7 +64,7 @@ function About() {
         <AboutTextImgSec
           title="AIM"
           text="To be the best #1 gaming company in the world."
-          img={about_us_second}
+          img="https://aurilian.s3.us-east-2.amazonaws.com/compresspng/about_us_second-min.png"
           orderfirst={"order-lg-last order-first"}
           orderLast={"order-first"}
           content="center"
@@ -104,7 +95,7 @@ function About() {
         <AboutTextImgSec
           title="MISSION"
           text="Our Mission is to create high quality, engaging, entertaining, and unique games for all platforms to provide an outstanding user experience and to enable talent in reaching their full potential through innovative tools and technology to lead and transform the gaming industry in all aspects."
-          img={about_us_four}
+          img="https://aurilian.s3.us-east-2.amazonaws.com/compresspng/about_us_four-min.png"
           orderfirst={"order-lg-last order-first"}
           orderLast={"order-first"}
           content="center"
@@ -148,7 +139,7 @@ function About() {
                 team to express their opinions. We strive to create a culture
                 where employees are heard and valued for their ideas. It helps
                 us to move forward in a healthy work environment."
-            img={about_respect}
+            img="https://aurilian.s3.us-east-2.amazonaws.com/compresspng/about_respect-min.png"
             orderfirst={"order-xl-first order-last"}
             orderLast={"order-last"}
           />
@@ -157,7 +148,7 @@ function About() {
           <AboutElements
             title="Collaboration"
             text="We push our team to work collectively without losing their individuality. Through honest communication we build trust and share knowledge to achieve our common goal. Collaboration is the key element to get our team aligned.          "
-            img={about_respect}
+            img={ele_sec}
             orderfirst={"order-last"}
             orderLast={"order-xl-first order-last"}
           />
@@ -167,7 +158,7 @@ function About() {
             title="Creativity"
             text="We inspire novel ideas in our team that bring originality in our work. This fuels innovation and challenges our way of thinking that ultimately leads to big ideas. Such experiments fully stimulate the team and enable them to be at their creative best.
           "
-            img={about_creativity}
+            img="https://aurilian.s3.us-east-2.amazonaws.com/compresspng/about_creativity-min.png"
             orderfirst={"order-xl-first order-last"}
             orderLast={"order-last"}
           />
@@ -177,7 +168,7 @@ function About() {
             title="Passion"
             text="We generate excitement through passion for what we do. With passion we nurture ideas, inspire excellence and find creative ways to eliminate obstacles. Our passion for our core purpose gives us courage to reach beyond our comfort zone.
           "
-            img={about_passion}
+            img="https://aurilian.s3.us-east-2.amazonaws.com/compresspng/about_passion-min.png"
             orderfirst={"order-last"}
             orderLast={"order-xl-first order-last"}
           />
@@ -187,7 +178,7 @@ function About() {
             title="Integrity"
             text="Integrity is the foundation of our organization. We are admired for our commitment to honesty and trustworthiness. We do the right thing, even when no one is watching. We do the right thing, even if it’s the hardest thing to do.
           "
-            img={about_integrity}
+            img="https://aurilian.s3.us-east-2.amazonaws.com/compresspng/about_integrity-min.png"
             orderfirst={"order-xl-first order-last"}
             orderLast={"order-last"}
             dis="none"
@@ -247,7 +238,10 @@ function About() {
           >
             <div className="col-lg-10 text-center">
               <div className="ceo_img_padding">
-                <img src={Ceo_Ustad} alt=".."></img>
+                <img
+                  src="https://aurilian.s3.us-east-2.amazonaws.com/compresspng/Ceo_Ustad-min.png"
+                  alt=".."
+                ></img>
               </div>
               <div className="ceo_about_eleement">
                 <h4>Mr. Saif Ullah Siddique</h4>

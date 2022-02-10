@@ -6,7 +6,6 @@ import "./Contact.css";
 import career_hero_img from "../Resources/Images/career/career_hero_img.png";
 
 import Footer from "../Components/Footer/Footer";
-import conatct_map from "../Resources/Images/Blog/conatct_map.png";
 
 import location_on from "../Resources/Images/Blog/location_on.svg";
 import mail from "../Resources/Images/Blog/mail.svg";
@@ -217,7 +216,7 @@ function Contact() {
         <Container fluid className="about_section_hero_main_wrapper">
           <Container>
             <Row>
-              <Col className="d-flex justify-content-center" lg={6}>
+              <Col className="d-flex" lg={6}>
                 <div className="about_section_hero_section">
                   <h1>Contact Us</h1>
                 </div>
@@ -347,8 +346,14 @@ function Contact() {
               </div>
             </div>
             <div>
-              <a href="https://g.page/aureliansolutions?share" target="_blank">
-                <img src={conatct_map} alt="..." />
+              <a
+                href="https://www.google.com/maps/place/Aurelian+Origins/@31.469717,74.254971,17z/data=!4m5!3m4!1s0x391903fe67721537:0x9378b78353fb4dda!8m2!3d31.469717!4d74.254971"
+                target="_blank"
+              >
+                <img
+                  src="https://aurilian.s3.us-east-2.amazonaws.com/compresspng+(1)/conatct_map-min.png"
+                  alt="..."
+                />
               </a>
             </div>
           </Col>

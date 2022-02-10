@@ -7,8 +7,8 @@
 
 .slider-Image-wrapper > img {
   width: 100%;
-  height: 88vh;
-  object-fit: fill;
+  height: 100%;
+  object-fit: cover;
   overflow: hidden;
   position: relative;
 }
@@ -41,10 +41,16 @@
 
 @media only screen and (max-width: 768px) {
   .slider-Image-wrapper > img {
-    width: 100vw;
-    height: 80vh;
+    width: 100%;
+    height: 30vh;
     object-fit: cover;
 
     overflow: hidden;
+  }
+  .Hompage-slider-wrapper {
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+    background: #000000;
   }
 }

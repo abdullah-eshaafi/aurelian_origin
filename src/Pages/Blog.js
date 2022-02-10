@@ -3,19 +3,16 @@ import { Container, Row, Col } from "react-bootstrap";
 import TheNavigantionBar from "../Components/Navbar/TheNavigantionBar";
 import "./Blog.css";
 
-import blogImg from "../Resources/Images/Blog/blogImg.png";
-
-import boy_addressing from "../Resources/Images/Blog/boy_addressing.png";
-import girl_addressing from "../Resources/Images/Blog/girl_addressing.png";
-
-import party from "../Resources/Images/Blog/party.png";
 import Footer from "../Components/Footer/Footer";
 function Blog() {
   return (
     <Container fluid className="px-0" style={{ overflowX: "hidden" }}>
       <TheNavigantionBar></TheNavigantionBar>
       <div className="boplg_main_image">
-        <img src={blogImg} alt="..."></img>
+        <img
+          src="https://aurilian.s3.us-east-2.amazonaws.com/compresspng+(1)/blogImg-min.png"
+          alt="..."
+        ></img>
       </div>
       <Container>
         <Row className="blog_com_main_wrapper">
@@ -89,7 +86,10 @@ function Blog() {
               </p>
             </div>
             <div className="blog_main_img">
-              <img src={boy_addressing} alt="..."></img>
+              <img
+                src="https://aurilian.s3.us-east-2.amazonaws.com/compresspng+(1)/boy_addressing-min.png"
+                alt="..."
+              ></img>
             </div>
 
             <div className="blog_main_para">
@@ -110,7 +110,10 @@ function Blog() {
               </p>
             </div>
             <div className="blog_main_img">
-              <img src={girl_addressing} alt="..."></img>
+              <img
+                src="https://aurilian.s3.us-east-2.amazonaws.com/compresspng+(1)/girl_addressing-min.png"
+                alt="..."
+              ></img>
             </div>
             <div className="blog_main_para">
               <p>
@@ -138,7 +141,10 @@ function Blog() {
         </Row>
       </Container>
       <div className="blog_main_img_">
-        <img src={party} alt="..."></img>
+        <img
+          src="https://aurilian.s3.us-east-2.amazonaws.com/compresspng+(1)/party-min.png"
+          alt="..."
+        ></img>
       </div>
       <Footer></Footer>
     </Container>
