@@ -9,6 +9,8 @@ import { MdLocationOn } from "react-icons/md";
 import { MdOutlineLocalPostOffice } from "react-icons/md";
 import footer_map from "../../Resources/Images/Footer/footer_map.png";
 
+import code from "./CODE.pdf";
+
 import close from "../../Resources/Images/Footer/close.svg";
 
 import axios from "axios";
@@ -252,13 +254,12 @@ function Footer() {
               </div>
             </div>
             <div className="col-xl-4 col-12 d-flex justify-content-xl-start justify-content-center">
-              <div className="footer_img  d-flex justify-content-center col-xl-11 ">
+              <div className="footer_img  d-flex justify-content-center col-xl-11">
                 <a
-                  href="https://www.google.com/maps/place/Aurelian+Origins/@31.469717,74.254971,17z/data=!4m5!3m4!1s0x391903fe67721537:0x9378b78353fb4dda!8m2!3d31.469717!4d74.254971"
+                  href="https://goo.gl/maps/R4k4VicYm55ChZsz6"
                   target="_blank"
                   className="  d-flex justify-content-center "
                 >
-                  {" "}
                   <img
                     src="https://aurilian.s3.us-east-2.amazonaws.com/compresspng+(4)/footer_map-min-min.png"
                     alt="..."
@@ -280,8 +281,16 @@ function Footer() {
                   </li>
                 ))}
 
-                <li>Code of Conduct</li>
-                <li>Support</li>
+                <li>
+                  <a
+                    href={code}
+                    download
+                    style={{ color: "white", textDecoration: "none" }}
+                  >
+                    Code of Conduct
+                  </a>
+                </li>
+
                 <li onClick={() => setLgShow(true)}>Subscribe</li>
               </ul>
             </div>

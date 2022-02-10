@@ -71,9 +71,6 @@ function TheNavigantionBar(props) {
             >
               Contact Us
             </NavLink>
-            <NavLink to="/.." className="margin_right_44 navbar_link">
-              <img src={search} alt="..." />
-            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -346,10 +346,7 @@ function Contact() {
               </div>
             </div>
             <div>
-              <a
-                href="https://www.google.com/maps/place/Aurelian+Origins/@31.469717,74.254971,17z/data=!4m5!3m4!1s0x391903fe67721537:0x9378b78353fb4dda!8m2!3d31.469717!4d74.254971"
-                target="_blank"
-              >
+              <a href="https://goo.gl/maps/R4k4VicYm55ChZsz6" target="_blank">
                 <img
                   src="https://aurilian.s3.us-east-2.amazonaws.com/compresspng+(1)/conatct_map-min.png"
                   alt="..."
